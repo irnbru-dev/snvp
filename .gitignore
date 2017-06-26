@@ -4,7 +4,7 @@ dist
 app/bower_components
 _design
 /bower_components
-/build
+
 # Created by .ignore support plugin (hsz.mobi)
 ### OSX template
 .DS_Store
