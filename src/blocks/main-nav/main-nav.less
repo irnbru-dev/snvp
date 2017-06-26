@@ -1,0 +1,95 @@
+@media (min-width: 320px) and (max-width: 767px) {
+
+  .main-nav {
+    display: block;
+    background-color: @blue-dark;
+
+    .nav-item a {
+      text-transform: uppercase;
+      color: @white;
+      font-weight: bold;
+      padding-top: 20px;
+      padding-bottom: 20px;
+
+      &:hover, &:active, &:focus {
+        color: @blue;
+      }
+    }
+
+    .glyphicon {
+      margin-left: 8px;
+      color: @blue;
+    }
+
+    .subnav-item a {
+      color: @white;
+      font-size: 13px;
+      line-height: 20px;
+      text-transform: none;
+      text-decoration: underline;
+      font-weight: normal;
+
+      &:hover {
+        color: @blue;
+      }
+    }
+
+  }
+}
+
+@media (min-width: 768px) {
+
+  .main-nav {
+    display: block;
+    // padding-top: 50px;
+    // padding-bottom: 50px;
+
+    .nav-item {
+      position: relative;
+      
+      &:hover:after {
+        position: absolute;
+        display: inline-block;
+        content: '';
+
+        top: 43px;
+        left: 12px;
+        width: 43px;
+        height: 3px;
+
+        background-color: @green;
+      }
+    }
+
+    .nav-item a {
+      font-weight: bold;
+      color: @black;
+      text-transform: uppercase;
+    }
+
+    .glyphicon {
+      margin-left: 10px;
+      color: @blue;
+    }
+
+    .dropdown-menu {
+      padding-top: 45px;
+      border: none;
+      box-shadow: none;
+      // max-width: 330px;
+    }
+
+    .subnav-item a {
+      font-size: 13px;
+      font-weight: semibold;
+      padding-top: 15px;
+      padding-bottom: 15px;
+    }
+
+    .subnav-item a:hover {
+      color: @green;
+    }
+  }
+
+
+}

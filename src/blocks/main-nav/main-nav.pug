@@ -1,0 +1,94 @@
+mixin main-nav()
+  +e.SECTION.main-nav&attributes(attributes)
+    +e.NAV.navbar
+      +e.DIV.container
+        +e.DIV.navbar-header
+          +e.BUTTON.navbar-toggle.collapsed(data-toggle='collapse', data-target='#bs-example-navbar-collapse-1', aria-expanded='false')
+            +e.SPAN.sr-only
+            +e.SPAN.icon-bar
+            +e.SPAN.icon-bar
+            +e.SPAN.icon-bar
+          +e.A.navbar-brand(href='#')
+        +e.DIV.collapse.navbar-collapse(id='bs-example-navbar-collapse-1')
+          +e.UL.nav.navbar-nav
+            +e.LI.dropdown.nav-item
+              +e.A.dropdown-toggle(href='#', data-toggle='dropdown', role='button', aria-haspopup='true', aria-expanded='false') Каталог
+                +e.SPAN.glyphicon.glyphicon-menu-down
+              +e.UL.dropdown-menu
+                +e.LI.subnav-item
+                  +e.A(href='#') Судно на воздушной подушке
+                +e.LI.subnav-item
+                  +e.A(href='#') Аэроглиссер
+                +e.LI.subnav-item
+                  +e.A(href='#') Аэробот
+                +e.LI.subnav-item
+                  +e.A(href='#') Аэроджип
+                +e.LI.subnav-item
+                  +e.A(href='#') Аэролодка
+                +e.LI.subnav-item
+                  +e.A(href='#') Вездеход на воздушной подушке
+                +e.LI.subnav-item
+                  +e.A(href='#') Грузовая платформа на воздушной подушке
+            +e.LI.dropdown.nav-item
+              +e.A.dropdown-toggle(href='#', data-toggle='dropdown', role='button', aria-haspopup='true', aria-expanded='false') Купить
+                +e.SPAN.glyphicon.glyphicon-menu-down
+              +e.UL.dropdown-menu
+                +e.LI.subnav-item
+                  +e.A(href='#') Action
+                +e.LI.subnav-item
+                  +e.A(href='#') Action
+                +e.LI.subnav-item
+                  +e.A(href='#') Action
+                +e.LI.subnav-item
+                  +e.A(href='#') Action
+                +e.LI.subnav-item
+                  +e.A(href='#') Action
+                +e.LI.subnav-item
+                  +e.A(href='#') Action
+                +e.LI.subnav-item
+                  +e.A(href='#') Action
+            +e.LI.nav-item
+              +e.A(href='#') Аренда
+            +e.LI.dropdown.nav-item
+              +e.A.dropdown-toggle(href='#', data-toggle='dropdown', role='button', aria-haspopup='true', aria-expanded='false') Ремонт
+                +e.SPAN.glyphicon.glyphicon-menu-down
+              +e.UL.dropdown-menu
+                +e.LI.subnav-item
+                  +e.A(href='#') Action
+                +e.LI.subnav-item
+                  +e.A(href='#') Action
+                +e.LI.subnav-item
+                  +e.A(href='#') Action
+                +e.LI.subnav-item
+                  +e.A(href='#') Action
+                +e.LI.subnav-item
+                  +e.A(href='#') Action
+                +e.LI.subnav-item
+                  +e.A(href='#') Action
+                +e.LI.subnav-item
+                  +e.A(href='#') Action
+            +e.LI.dropdown.nav-item
+              +e.A.dropdown-toggle(href='#', data-toggle='dropdown', role='button', aria-haspopup='true', aria-expanded='false') О компании
+                +e.SPAN.glyphicon.glyphicon-menu-down
+              +e.UL.dropdown-menu
+                +e.LI.subnav-item
+                  +e.A(href='#') Something
+                +e.LI.subnav-item
+                  +e.A(href='#') Something
+                +e.LI.subnav-item
+                  +e.A(href='#') Something
+                +e.LI.subnav-item
+                  +e.A(href='#') Something
+                +e.LI.subnav-item
+                  +e.A(href='#') Something
+                +e.LI.subnav-item
+                  +e.A(href='#') Something
+                +e.LI.subnav-item
+                  +e.A(href='#') Something
+            +e.LI.nav-item
+              +e.A(href='#') Блог
+            +e.LI.nav-item
+              +e.A(href='#') Форум
+
+          
+      block
