@@ -1,0 +1,13 @@
+mixin boat-card(addClass, src, alt, title, subtitle, people, weight, length)
+  +b.SECTION.boat-card(class= addClass)
+    +e.A.link-to-boat
+      +e.DIV.img-box
+        +e.IMG.img(src= src, alt= alt)
+      +e.H3.title= title
+      +e.P.subtitle= subtitle
+      +e.P.about
+        +e.P.people= people
+        +e.P.weight= weight
+        +e.P.length= length
+      +e.BUTTON.btn.btn--blue Узнать цену
+      block
