@@ -4,11 +4,7 @@ mixin main-nav()
       +e.DIV.container
         +e.DIV.navbar-header
           +e.BUTTON.navbar-toggle.collapsed(data-toggle='collapse', data-target='#bs-example-navbar-collapse-1', aria-expanded='false')
-            +e.SPAN.sr-only
             +e.SPAN.icon-bar
-            +e.SPAN.icon-bar
-            +e.SPAN.icon-bar
-          +e.A.navbar-brand(href='#')
         +e.DIV.collapse.navbar-collapse(id='bs-example-navbar-collapse-1')
           +e.UL.nav.navbar-nav
             +e.LI.dropdown.nav-item
@@ -92,4 +88,6 @@ mixin main-nav()
 
           +e.A.linktomap(href='#') Карта сайта
           +e.A.linktocatalog(href='#') Каталог наименований
+
+          +e.INPUT(type='text')
       block
