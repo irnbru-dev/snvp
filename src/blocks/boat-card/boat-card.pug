@@ -1,13 +1,13 @@
-mixin boat-card(addClass, src, alt, title, subtitle, people, weight, length)
-  +b.SECTION.boat-card(class= addClass)
+mixin boat-card(src, alt, title, subtitle, people, weight, length, href)
+  +b.SECTION.boat-card
     +e.A.link-to-boat
       +e.DIV.img-box
         +e.IMG.img(src= src, alt= alt)
       +e.H3.title= title
       +e.P.subtitle= subtitle
-      +e.P.about
+      +e.DIV.about
         +e.P.people= people
         +e.P.weight= weight
         +e.P.length= length
-      +e.BUTTON.btn.btn--blue Узнать цену
+      +e.A.btn.btn--bordered(href= href) Узнать цену
       block

@@ -1,6 +1,6 @@
 @media (min-width: 768px) {
   
-  .boat-card{
+  .boat-card {
     display: block;
     min-height: 503px;
     background-color: @white;
@@ -8,6 +8,10 @@
     &__link-to-boat {
       display: block;
       cursor: pointer;
+
+      &:hover {
+        text-decoration: none;
+      }
     }
 
     &__img-box {
@@ -26,12 +30,22 @@
       line-height: 26px;
       color: @black;
       text-transform: uppercase;
+      padding-left: 30px;
+      padding-right: 30px;
     }
 
     &__subtitle {
       color: @black;
       font-size: 16px;
       line-height: 26px;
+      padding-left: 30px;
+      padding-right: 30px;
+    }
+
+    &__about {
+      padding-left: 30px;
+      padding-right: 30px;
+      margin-bottom: 20px;
     }
 
     &__people, &__weight, &__length {
@@ -70,6 +84,11 @@
     &__lenght:before {
       background-color: red;
       background-image: url(/img/index/boatcard-lenght.svg);
+    }
+
+    &__btn {
+      margin-left: 30px;
+      margin-right: 30px;
     }
   }
 
