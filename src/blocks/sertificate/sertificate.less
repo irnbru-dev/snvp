@@ -1,0 +1,62 @@
+@media (min-width: 768px) {
+
+  .sertificate{
+    display: block;
+    padding-top: 80px;
+
+    &__inner {
+      .container(30px);
+    }
+
+    &__title {
+      font-size: 30px;
+      line-height: 55px;
+      font-weight: bold;
+      text-transform: uppercase;
+      text-align: center;
+      margin-bottom: 60px;
+    }
+
+    // &__linktosertificate {
+    //   display: block;
+    //   padding-left: 35px;
+    // }
+
+    &__text {
+      font-size: 16px;
+      line-height: 26px;
+      margin-bottom: 85px;
+    }
+
+    &__approve {
+      margin-bottom: 60px;
+    }
+  }
+
+
+
+  .linktosertificate {
+      display: block;
+      position: relative;
+      padding-left: 35px;
+      margin-bottom: 50px;
+
+      &:before {
+        position: absolute;
+        content: '';
+        display: inline-block;
+        
+        left: 0;
+        top: 5px;
+        width: 20px;
+        height: 20px;
+
+        background-image: url(images/);
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-color: @green;
+      }
+    }
+
+
+}

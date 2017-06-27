@@ -1,0 +1,6 @@
+mixin news-close(title, description, date)
+  +b.SECTION.news-close&attributes(attributes)
+    +e.inner
+      +e.H3.title= title
+      +e.P.description= description
+      +e.P.date= date
