@@ -1,0 +1,65 @@
+mixin footer()
+  +b.SECTION.footer&attributes(attributes)
+    +e.inner
+      +e.DIV.phone-box
+        +e.P.phone +7 812 927 36 66
+        +e.P.phone +7 495 233 72 24
+      +e.footer-top
+        +e.A.logo(href='index.html')
+          +e.IMG(src='/img/index/snvp-logo-text.svg')
+        +e.copyright snvp.su &#169; 2017
+        +e.A.linktomap(href='#') Карта сайта
+        +e.A.linktocatalog(href='#') Каталог наименований
+        +e.socials
+          +e.A.vk(href='#')
+          +e.A.fb(href='#')
+          +e.A.youtube(href='#')
+          +e.A.gplus(href='#')
+      +e.footer-main
+        +e.UL.main-list
+          +e.LI.item-title Каталог
+            +e.UL.sublist
+              +e.LI.sublink
+                +e.A(href='#') Судно на воздушной подушке
+              +e.LI.sublink
+                +e.A(href='#') Аэроглиссер
+              +e.LI.sublink
+                +e.A(href='#') Аэробот
+              +e.LI.sublink
+                +e.A(href='#') Аэроджип
+              +e.LI.sublink
+                +e.A(href='#') Аэролодка
+              +e.LI.sublink
+                +e.A(href='#') Вездеход на воздушной подушке
+              +e.LI.sublink
+                +e.A(href='#') Грузовая платформа на воздушной подушке
+          +e.LI.item-title Купить
+            +e.UL.sublist
+              +e.LI.sublink
+                +e.A(href='#') Коммерческие перевозки
+              +e.LI.sublink
+                +e.A(href='#') Гос.проекты
+              +e.LI.sublink
+                +e.A(href='#') Частное использование
+              +e.LI.sublink
+                +e.A(href='#') Б/У
+          +e.LI.item-title Аренда
+          +e.LI.item-title Ремонт
+            +e.UL.sublist
+              +e.LI.sublink 
+                +e.A(href='#') Запчасти
+          +e.LI.item-title О компании
+            +e.UL.sublist
+              +e.LI.sublink
+                +e.A(href='#') О нас
+              +e.LI.sublink
+                +e.A(href='#') Доставка
+              +e.LI.sublink
+                +e.A(href='#') Реквизиты
+              +e.LI.sublink
+                +e.A(href='#') Контакты
+              +e.LI.sublink
+                +e.A(href='#') Презентация
+          +e.LI.item-title Блог
+          +e.LI.item-title Форум
+      block
