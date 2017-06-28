@@ -1,0 +1,8 @@
+mixin post-forum(href, title, date, author, topic)
+  section.post-forum&attributes(attributes)
+    a.inner(href= href)
+      p.post-forum__title= title
+      a.post-forum__date(href= '#')= date
+      a.post-forum__author(href= '#')= author
+      a.post-forum__topic(href= '#')= topic
+      block

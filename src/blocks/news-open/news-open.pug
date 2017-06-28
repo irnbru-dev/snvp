@@ -1,10 +1,9 @@
-mixin news-open(title, description, date, src, detailsHref)
-  +b.SECTION.news-open&attributes(attributes)
-    +e.inner
-      +e.H3.title= title
-      +e.P.description= description
-      +e.P.date= date
-      +e.img-box
-        +e.IMG(src= src)
-      +e.A.details.btn(href= detailsHref) Подробнее
+mixin news-open(href, title, description, date, src, detailsHref)
+  article.news-open&attributes(attributes)
+    a.news-open__inner(href= href)
+      h3.news-open__title= title
+      p.news-open__description= description
+      p.news-open__date= date
+      div.news-open__img-box
+        img(src= src)
       block

@@ -1,6 +1,6 @@
-mixin news-close(title, description, date)
-  +b.SECTION.news-close&attributes(attributes)
-    +e.inner
-      +e.H3.title= title
-      +e.P.description= description
-      +e.P.date= date
+mixin news-close(href, title, description, date)
+  article.news-close&attributes(attributes)
+    a.news-close__inner(href= href)
+      h3.news-close__title= title
+      p.news-close__description= description
+      p.news-close__date= date

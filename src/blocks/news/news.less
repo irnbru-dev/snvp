@@ -13,6 +13,35 @@
       margin-bottom: 60px;
     }
   }
+  
+  .news-item {
+    position: relative;
+    
+    &__details {
+      position: absolute;
+      display: inline-block;
+      content: '';
 
+      left: 15px;
+      bottom: 0;
+
+      &:hover {
+        color: @white;
+      }
+    }
+
+    &__all {
+      position: absolute;
+      display: inline-block;
+      content: '';
+
+      left: 15px;
+      bottom: 0;
+      
+      &:hover {
+        color: @white;
+      }
+    }
+  }
 
 }

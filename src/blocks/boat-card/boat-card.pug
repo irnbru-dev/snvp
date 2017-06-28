@@ -1,13 +1,13 @@
 mixin boat-card(src, alt, title, subtitle, people, weight, length, href)
-  +b.SECTION.boat-card
-    +e.A.link-to-boat
-      +e.DIV.img-box
-        +e.IMG.img(src= src, alt= alt)
-      +e.H3.title= title
-      +e.P.subtitle= subtitle
-      +e.DIV.about
-        +e.P.people= people
-        +e.P.weight= weight
-        +e.P.length= length
-      +e.A.btn.btn--bordered(href= href) Узнать цену
+  section.boat-card
+    a.boat-card__link-to-boat
+      div.boat-card__img-box
+        img.boat-card__img(src= src, alt= alt)
+      h3.boat-card__title= title
+      p.boat-card__subtitle= subtitle
+      div.boat-card__about
+        p.boat-card__people= people
+        p.boat-card__weight= weight
+        p.boat-card__length= length
+      a.boat-card__btn.btn.btn--bordered(href= href) Узнать цену
       block

@@ -1,0 +1,8 @@
+mixin blog-post(href, title, date, src)
+  article.blog-post&attributes(attributes)
+    a.inner(href= href)
+      h3.blog-post__title= title
+      p.blog-post__date= date
+      div.blog-post__img-box
+        img(src= src)
+      block

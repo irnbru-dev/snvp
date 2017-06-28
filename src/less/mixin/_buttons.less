@@ -1,6 +1,21 @@
 .btn {
   border-radius: 0;
 
+  &--blue {
+    background-color: @blue;
+    color: @white;
+  }
+
+  &--arrow {
+    padding-right: 50px;
+
+    &:after {
+      background-image: url(images/);
+      background-repeat: no-repeat;
+      background-size: 100%;
+    }
+  }
+
   &--bordered {
     border: 3px solid @blue;
     color: @black;

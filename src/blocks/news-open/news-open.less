@@ -2,6 +2,13 @@
   .news-open {
     display: block;
 
+    & a {
+      color: @black;
+      &:hover, &:active, &:focus, &:visited {
+        text-decoration: none;
+      }
+    }
+
     &__title {
       font-size: 20px;
       line-height: 30px;
@@ -17,14 +24,24 @@
 
     &__date {
       position: relative;
-      color: #b5b5b5;
+      color: @grey;
       padding-left: 30px;
       margin-bottom: 25px;
     }
 
     &__img-box {
+      position: relative;
       height: 230px;
       overflow: hidden;
+    }
+
+    &__details {
+      position: absolute;
+      display: inline-block;
+      content: '';
+
+      left: 15px;
+      bottom: 0;
     }
   }
 
