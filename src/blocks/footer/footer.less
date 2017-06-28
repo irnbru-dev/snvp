@@ -1,11 +1,12 @@
-.footer{
-  display: block;
-  position: relative;
-  background-color: #273757;
-  padding-top: 60px;
-  padding-bottom: 222px;
+@media (min-width: 768px) {
+  .footer{
+    display: block;
+    position: relative;
+    background-color: #273757;
+    padding-top: 60px;
+    padding-bottom: 222px;
 
-  &__phone-box {
+    &__phone-box {
       position: absolute;
       top: -10px;
       right: 15px;
@@ -45,77 +46,80 @@
       }
     }
 
-  &__footer-top {
-    padding-bottom: 50px;
-    border-bottom: 2px solid @white;
-  }
+    &__footer-top {
+      padding-bottom: 50px;
+      border-bottom: 2px solid @white;
+    }
 
-  &__copyright {
-    display: inline-block;
-    color: @white;
-    margin-right: 80px;
-  }
-
-  &__linktomap, &__linktocatalog {
-    display: inline-block;
-    color: @white;
-    font-size: 13px;
-    line-height: 26px;
-    text-decoration: underline;
-
-    &:hover {
+    &__copyright {
+      display: inline-block;
       color: @white;
+      margin-right: 80px;
+    }
+
+    &__linktomap, &__linktocatalog {
+      display: inline-block;
+      color: @white;
+      font-size: 13px;
+      line-height: 26px;
+      text-decoration: underline;
+
+      &:hover, &:visited {
+        color: @white;
+      }
+    }
+
+    &__linktomap {
+      margin-right: 80px;
+    }
+
+    &__socials {
+      border: 1px solid red;
+      width: 180px; //удалить
+      height: 20px; //удалить
+      text-align: right;
+      float: right;
+      margin-top: 10px;
+    }
+
+    &__footer-main {
+      margin-top: 60px;
+    }
+
+    &__main-list {
+      list-style: none;
+      padding-left: 0;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    &__item-title {
+      color: @white;
+      text-transform: uppercase;
+      font-size: 14px;
+      font-weight: bold;
+    }
+
+    &__sublist {
+      list-style: none;
+      margin-top: 30px;
+      padding-left: 0;
+    }
+
+    &__sublink {
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
+
+    &__sublink a {
+      color: @white;
+      font-size: 13px;
+      line-height: 20px;
+      font-weight: normal;
+      text-transform: none;
+      text-decoration: underline;
     }
   }
 
-  &__linktomap {
-    margin-right: 80px;
-  }
 
-  &__socials {
-    border: 1px solid red;
-    width: 180px; //удалить
-    height: 20px; //удалить
-    text-align: right;
-    float: right;
-    margin-top: 10px;
-  }
-
-  &__footer-main {
-    margin-top: 60px;
-  }
-
-  &__main-list {
-    list-style: none;
-    padding-left: 0;
-    display: flex;
-    justify-content: space-between;
-  }
-
-  &__item-title {
-    color: @white;
-    text-transform: uppercase;
-    font-size: 14px;
-    font-weight: bold;
-  }
-
-  &__sublist {
-    list-style: none;
-    margin-top: 30px;
-    padding-left: 0;
-  }
-
-  &__sublink {
-    padding-top: 10px;
-    padding-bottom: 10px;
-  }
-
-  &__sublink a {
-    color: @white;
-    font-size: 13px;
-    line-height: 20px;
-    font-weight: normal;
-    text-transform: none;
-    text-decoration: underline;
-  }
 }

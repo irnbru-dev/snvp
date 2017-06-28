@@ -1,10 +1,13 @@
 mixin main-nav()
-  e.SECTION.main-nav
+  section.main-nav
     nav.navbar
       div.container
         div.navbar-header
           button.navbar-toggle.collapsed(data-toggle='collapse', data-target='#bs-example-navbar-collapse-1', aria-expanded='false')
-            e.SPAN.icon-bar
+            span.sr-only Toggle navigation
+            span.icon-bar
+            span.icon-bar
+            span.icon-bar
         div.collapse.navbar-collapse(id='bs-example-navbar-collapse-1')
           ul.nav.navbar-nav
             li.dropdown.nav-item

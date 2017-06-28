@@ -41,12 +41,15 @@
   <body>
     <main>
       <main>
-        <e class="SECTION main-nav">
+        <section class="main-nav">
           <nav class="navbar">
             <div class="container">
               <div class="navbar-header">
                 <button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                  <e class="SPAN icon-bar"></e>
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
                 </button>
               </div>
               <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -179,8 +182,8 @@
               </div>
             </div>
           </nav>
-        </e>
-        <section class="main-promo clearfix">
+        </section>
+        <section class="main-promo">
           <div class="container">
             <div class="main-promo__phone-box">
               <p class="main-promo__phone">+7 812
@@ -314,43 +317,47 @@
         <section class="functions">
           <div class="container">
             <h2 class="functions__title">Универсальные транспортные средства</h2>
-            <p>Суда на воздушной подушке представляют собой высококачественные аппараты, которые могут исполнять самые разнообразные функции. Их можно использовать как транспортные средства для: </p>
-            <div class="functions__function-box">
-              <div class="functions__function-item">
-                <div class="functions__img-box">
-                  <img class="functions__img" />
-                </div>
-                <p>Транспортировка грузов</p>
-              </div>
-              <div class="functions__function-item">
-                <div class="functions__img-box">
-                  <img class="functions__img" />
-                </div>
-                <p>Перевозка пассажиров</p>
-              </div>
-              <div class="functions__function-item">
-                <div class="functions__img-box">
-                  <img class="functions__img" />
-                </div>
-                <p>Активный отдых</p>
-              </div>
-              <div class="functions__function-item">
-                <div class="functions__img-box">
-                  <img class="functions__img" />
-                </div>
-                <p>Спасательные операции</p>
-              </div>
-              <div class="functions__function-item">
-                <div class="functions__img-box">
-                  <img class="functions__img" />
-                </div>
-                <p>Исследовательская и научная деятельность</p>
+            <div class="row">
+              <div class="col-md-6 col-md-offset-3">
+                <p class="functions__subtitle">Суда на воздушной подушке представляют собой высококачественные аппараты, которые могут исполнять самые разнообразные функции. Их можно использовать как транспортные средства для: </p>
               </div>
             </div>
+            <ul class="functions__function-box">
+              <li class="functions__function-item">
+                <div class="functions__img-box">
+                  <img class="functions__img" />
+                </div>
+                <p class="functions__function-item-txt">Транспортировка грузов</p>
+              </li>
+              <li class="functions__function-item">
+                <div class="functions__img-box">
+                  <img class="functions__img" />
+                </div>
+                <p class="functions__function-item-txt">Перевозка пассажиров</p>
+              </li>
+              <li class="functions__function-item">
+                <div class="functions__img-box">
+                  <img class="functions__img" />
+                </div>
+                <p class="functions__function-item-txt">Активный отдых</p>
+              </li>
+              <li class="functions__function-item">
+                <div class="functions__img-box">
+                  <img class="functions__img" />
+                </div>
+                <p class="functions__function-item-txt">Спасательные операции</p>
+              </li>
+              <li class="functions__function-item">
+                <div class="functions__img-box">
+                  <img class="functions__img" />
+                </div>
+                <p class="functions__function-item-txt">Исследовательская и научная деятельность</p>
+              </li>
+            </ul>
           </div>
         </section>
         <section class="news clearfix">
-          <div class="news__inner">
+          <div class="container">
             <h2 class="news__title">Новости</h2>
             <div class="container">
               <div class="row">
@@ -389,7 +396,7 @@
           </div>
         </section>
         <section class="community">
-          <div class="community__inner">
+          <div class="container">
             <h2 class="community__title">Сообщество</h2>
             <div class="container">
               <div class="row">
