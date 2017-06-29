@@ -1,7 +1,16 @@
-@media (min-width: 320px) and (max-width: 767px) {
+@media (min-width: 320px) and (max-width: 991px) {
   
   .dropdown-menu {
     border-radius: 0;
+    margin-bottom: 0;
+  }
+
+  .navbar-nav .open .dropdown-menu {
+    margin-top: -15px;
+  }
+
+  .navbar-nav .open .dropdown-menu>li>a {
+    padding-left: 15px;
   }
 
   .nav > li > a:focus,
@@ -14,9 +23,17 @@
     background-color: transparent;
   }
 
+  .navbar-header {
+    background-color: @white;
+    border: none;
+    height: 50px;
+  }
+
   .navbar {
     display: block;
     background-color: @blue-dark;
+    border-radius: 0;
+    margin-bottom: 0;
 
     .nav-item a {
       text-transform: uppercase;
@@ -33,6 +50,7 @@
     .glyphicon {
       margin-left: 8px;
       color: @blue;
+      font-size: 12px;
     }
 
     .subnav-item a {
@@ -48,16 +66,12 @@
       }
     }
 
-    .linktomap, .linktocatalog {
+    .link {
       color: @white;
       text-decoration: underline;
       font-size: 13px;
       line-height: 26px;
       margin-bottom: 40px;
-    }
-
-    .linktocatalog {
-      float: right;
     }
     
     & input {
@@ -66,28 +80,136 @@
       margin-bottom: 40px;
     }
   }
+
+  .navbar-header {
+    float: none;
+  }
+
+  // .navbar-left,.navbar-right {
+  //   float: none !important;
+  // }
+
+  .navbar-toggle {
+    display: block;
+  }
+
+  .navbar-collapse {
+    border-top: none;
+    box-shadow: none;
+    border-color: transparent;
+  }
+
+  .navbar-collapse.collapse {
+    display: none!important;
+  }
+
+  .navbar-nav {
+    float: none!important;
+  }
+
+  .navbar-nav > li {
+    float: none;
+  }
+
+  .collapse.in{
+    display:block !important;
+  }
+
+//burger
+  .navbar-toggle {
+    position: relative;
+    width: 36px;
+    height: 40px;
+    border: none;
+    margin-top: 3px;
+    margin-bottom: 0;
+    padding-right: 0;
+
+    &:hover,
+    &:focus {
+      background: transparent;
+    }
+
+    .icon-bar {
+      position: absolute;
+      background-color: @black;
+      top: 20px;
+      left: 0;
+      height: 4px;
+      width: 26px;
+      border-radius: 2px;
+      transition: background 0s 0.3s;
+
+      &::before,
+      &::after {
+        position: absolute;
+        display: block;
+        width: 26px;
+        height: 4px;
+        background-color: @black;
+        content: "";
+        margin: 0;
+        left: 0;
+      }
+
+      &::before {
+        top: -12px;
+        transition: top 0.3s 0.3s, transform 0.3s 0s;
+      }
+
+      &::after {
+        bottom: -12px;
+        transition: bottom 0.3s 0.3s, transform 0.3s 0s;
+      }
+    }
+
+    &:not(.collapsed) {
+      .icon-bar {
+        background: none;
+
+        &::before {
+          top: 0;
+          transform: rotate(45deg);
+          transition: top 0.3s 0s, transform 0.3s 0.3s;
+        }
+
+        &::after {
+          bottom: 0;
+          transform: rotate(-45deg);
+          transition: bottom 0.3s 0s, transform 0.3s 0.3s;
+        }
+      }
+    }
+  }
 }
 
-@media (min-width: 768px) {
-  
-  .dropdown-menu {
-    border-radius: 0;
-  }
+// Чтобы меню открывалось по ховеру:
+@media (min-width: 992px) {
+    ul.nav li.dropdown:hover > ul.dropdown-menu {
+        display: block;
+    }
 
-  .nav > li > a:focus,
-  .nav > li > a:hover,
-  .dropdown-menu > li > a:focus,
-  .dropdown-menu > li > a:hover,
-  .nav .open > a,
-  .nav .open > a:focus,
-  .nav .open > a:hover {
-      background-color: transparent;
-  }
+    .dropdown-menu {
+      border-radius: 0;
+      padding-left: 0;
+    }
 
-  .navbar {
+    .nav > li > a:focus,
+    .nav > li > a:hover,
+    .dropdown-menu > li > a:focus,
+    .dropdown-menu > li > a:hover,
+    .nav .open > a,
+    .nav .open > a:focus,
+    .nav .open > a:hover {
+        background-color: transparent;
+    }
+
+    .navbar {
     display: block;
-    // padding-top: 50px;
-    // padding-bottom: 50px;
+    border-radius: 0;
+    margin-bottom: 0;
+    padding-top: 40px;
+    padding-bottom: 40px;
 
     .nav-item {
       position: relative;
@@ -115,6 +237,7 @@
     .glyphicon {
       margin-left: 10px;
       color: @blue;
+      font-size: 12px;
     }
 
     .dropdown-menu {
@@ -135,7 +258,7 @@
       color: @green;
     }
 
-    .linktomap, .linktocatalog {
+    .link {
       display: none;
     }
 
@@ -143,6 +266,4 @@
       display: none;
     }
   }
-
-
-}
+} 

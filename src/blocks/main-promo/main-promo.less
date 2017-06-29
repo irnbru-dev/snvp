@@ -1,3 +1,30 @@
+@media (min-width: 320px) and (max-width: 767px) {
+  .main-promo {
+    background-image: url(/img/index/main-promo-bg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    h1 {
+      color: @white;
+      margin-top: 50px;
+    }
+
+    &__phone-box {
+      display: none;
+    }
+
+    &__more {
+      display: none;
+    }
+
+    &__list {
+      list-style: none;
+    }
+  }
+}
+
+
 @media (min-width: 768px) {
 
   .main-promo {
@@ -69,10 +96,10 @@
     }
 
     &__item {
-      display: inline-block;
+      // display: inline-block;
       vertical-align: top;
       height: 170px;
-      width: 24%;
+      // width: 24%;
       padding: 30px;
 
       &:hover {

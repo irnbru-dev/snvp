@@ -3,9 +3,6 @@ mixin main-nav()
       div.container
         div.navbar-header
           button.navbar-toggle.collapsed(data-toggle='collapse', data-target='#bs-example-navbar-collapse-1', aria-expanded='false')
-            span.sr-only Toggle navigation
-            span.icon-bar
-            span.icon-bar
             span.icon-bar
         div.collapse.navbar-collapse(id='bs-example-navbar-collapse-1')
           ul.nav.navbar-nav
@@ -88,8 +85,8 @@ mixin main-nav()
             li.nav-item
               a(href='#') Форум
 
-          a.linktomap(href='#') Карта сайта
-          a.linktocatalog(href='#') Каталог наименований
+          a.link(href='#') Карта сайта
+          a.link.pull-right(href='#') Каталог наименований
 
           input(type='text')
       block
