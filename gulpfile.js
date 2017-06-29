@@ -126,7 +126,8 @@ gulp.task('less', function () {
     // .pipe(gulp.dest(path.build.css))
 });
 
-// Compilation js v2 
+// Compilation js v2
+// TODO: exclude jquery from path.src.js
 // (If jquery is used from 3rd party, and you need to exclude it from script.min.js, you should manually put all required .js files into path.src.js directory)
 gulp.task('js', function() {
   return gulp.src(path.src.js)
