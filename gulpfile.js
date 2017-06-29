@@ -59,7 +59,7 @@ const path = {
     js: 'build/js/',
     css: 'build/css/',
     img: 'build/img/',
-    fonts: 'build/fonts/',
+    // fonts: 'build/fonts/',
     pngSprites: 'src/img/',
     pngSpritesCss: 'src/less/common/',
     deploy: 'build/**/*'
@@ -72,7 +72,7 @@ const path = {
     js: 'src/js/**/*.js',
     less: 'src/less/*.less',
     img: ['src/img/**/*.*', '!src/img/png-sprite/*.*'],
-    fonts: 'src/fonts/**/*.*',
+    // fonts: 'src/fonts/**/*.*',
     pngSprites: 'src/img/png-sprite/*.png',
     browserify: 'src/js/*.js'
   },
@@ -82,7 +82,7 @@ const path = {
     js: 'src/js/**/*.js',
     less: ['src/less/**/*.less', 'src/blocks/**/*.less'],
     img: 'src/img/*.*',
-    fonts: 'src/fonts/**/*.*',
+    // fonts: 'src/fonts/**/*.*',
     pngSprites: 'src/img/png-sprite/*.png'
   },
   clean: './build'
@@ -171,11 +171,11 @@ gulp.task('png-sprites', function () {
 });
 
 // Copying fonts
-gulp.task('fonts', function() {
-  return gulp.src(path.src.fonts)
-    .pipe(newer(path.build.fonts))
-    .pipe(gulp.dest(path.build.fonts))
-});
+// gulp.task('fonts', function() {
+//   return gulp.src(path.src.fonts)
+//     .pipe(newer(path.build.fonts))
+//     .pipe(gulp.dest(path.build.fonts))
+// });
 
 // Clean
 gulp.task('clean', function () {
@@ -183,7 +183,7 @@ gulp.task('clean', function () {
 });
 
 // Overall build
-gulp.task('build', gulp.series('clean', gulp.parallel('png-sprites', 'pug', 'fonts', 'js' , gulp.parallel('img', 'less'))));
+gulp.task('build', gulp.series('clean', gulp.parallel('png-sprites', 'pug', 'js' , gulp.parallel('img', 'less'))));
 
 
 // Server config
@@ -211,7 +211,7 @@ gulp.task('watch', function(){
   gulp.watch(path.watch.less, gulp.series('less'));
   gulp.watch(path.watch.img, gulp.series('img'));
   gulp.watch(path.watch.js, gulp.series('js'));
-  gulp.watch(path.watch.fonts, gulp.series('fonts'));
+  // gulp.watch(path.watch.fonts, gulp.series('fonts'));
 });
 
 // Default task

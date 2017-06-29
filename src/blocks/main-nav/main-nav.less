@@ -1,6 +1,20 @@
 @media (min-width: 320px) and (max-width: 767px) {
   
-  .main-nav {
+  .dropdown-menu {
+    border-radius: 0;
+  }
+
+  .nav > li > a:focus,
+  .nav > li > a:hover,
+  .dropdown-menu > li > a:focus,
+  .dropdown-menu > li > a:hover,
+  .nav .open > a,
+  .nav .open > a:focus,
+  .nav .open > a:hover {
+    background-color: transparent;
+  }
+
+  .navbar {
     display: block;
     background-color: @blue-dark;
 
@@ -55,8 +69,22 @@
 }
 
 @media (min-width: 768px) {
+  
+  .dropdown-menu {
+    border-radius: 0;
+  }
 
-  .main-nav {
+  .nav > li > a:focus,
+  .nav > li > a:hover,
+  .dropdown-menu > li > a:focus,
+  .dropdown-menu > li > a:hover,
+  .nav .open > a,
+  .nav .open > a:focus,
+  .nav .open > a:hover {
+      background-color: transparent;
+  }
+
+  .navbar {
     display: block;
     // padding-top: 50px;
     // padding-bottom: 50px;
