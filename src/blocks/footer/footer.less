@@ -1,32 +1,33 @@
-@media (min-width: 768px) {
+// @media (min-width: 768px) {
   .footer{
     display: block;
     position: relative;
     background-color: #273757;
-    padding-top: 60px;
+    // padding-top: 20px;
     padding-bottom: 222px;
 
     &__phone-box {
-      position: absolute;
+      display: block;
+      position: relative;
       top: -10px;
-      right: 15px;
+      text-align: right;
+      color: @white;
     }
 
     &__phone {
       position: relative;
       display: inline-block;
+      text-align: center;
       width: 190px;
       font-size: 20px;
       line-height: 55px;
-      text-align: center;
-      color: @white;
       background-color: @blue;
       margin-right: 20px;
 
       &:last-child {
         margin-right: 0;
       }
-      
+
       & span {
         font-weight: bold;
       }
@@ -38,7 +39,6 @@
 
         top: 0;
         left: -10px;
-        // z-index: -1;
 
         border: 5px solid transparent;
         border-right: 5px solid #3172a0;
@@ -49,6 +49,24 @@
     &__footer-top {
       padding-bottom: 50px;
       border-bottom: 2px solid @white;
+    }
+
+    &__logo {
+      color: @white;
+      text-transform: uppercase;
+      margin-right: 60px;
+      margin-top: -10px;
+
+      .name {
+        font-size: 30px;
+        font-weight: 800;
+      }
+
+      .txt {
+        font-size: 8px;
+        line-height: 18px;
+        margin-top: -20px;
+      }
     }
 
     &__copyright {
@@ -122,4 +140,4 @@
   }
 
 
-}
+// }

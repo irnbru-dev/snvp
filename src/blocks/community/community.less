@@ -1,18 +1,22 @@
-@media (min-width: 768px) {
+// @media (min-width: 768px) {
   .community{
     display: block;
 
     &__title {
       text-align: center;
       text-transform: uppercase;
-      font-weight: bold;
       font-size: 30px;
       line-height: 55px;
+      font-weight: 800;
       margin-bottom: 60px;
+      @media (max-width: 576px) {
+        margin-bottom: 40px;
+      }
     }
   }
 
   .community-item {
+    margin-bottom: 80px;
 
     &__new-post, &__new-on-forum {
       color: @grey;
@@ -29,4 +33,4 @@
   }
 
 
-}
+// }

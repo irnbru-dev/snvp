@@ -1,4 +1,4 @@
-@media (min-width: 768px) {
+// @media (min-width: 768px) {
 
   .functions {
     display: block;
@@ -19,14 +19,26 @@
     &__subtitle {
       font-size: 16px;
       line-height: 26px;
-      color: @white;
+      color: #b0b5c5;
       margin-bottom: 60px;
+      @media (max-width: 576px) {
+        text-align: left;
+      }
+    }
+
+    &__function-box {
+      display: flex;
+      justify-content: space-between;
+      @media (max-width: 576px) {
+        flex-direction: column;
+      }
     }
 
     &__function-item {
       display: inline-block;
       box-sizing: border-box;
-      // padding: 20px;
+      padding-left: 10px;
+      padding-right: 10px;
     }
 
     &__function-item-txt {
@@ -37,4 +49,4 @@
   }
 
 
-}
+// }

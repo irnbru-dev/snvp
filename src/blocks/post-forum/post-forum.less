@@ -1,4 +1,4 @@
-@media (min-width: 768px) { 
+// @media (min-width: 768px) { 
   .post-forum {
     display: block;
     margin-bottom: 40px;
@@ -22,10 +22,16 @@
       }
     }
 
+    &__author, &__topic {
+      @media (max-width: 768px) {
+        display: none;
+      }
+    }
+
     &__date {
       padding-left: 30px;
     }
   }
 
 
-}
+// }

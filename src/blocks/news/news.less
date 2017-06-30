@@ -1,4 +1,4 @@
-@media (min-width: 768px) {
+// @media (min-width: 768px) {
   .news {
     display: block;
     padding-top: 80px;
@@ -6,11 +6,11 @@
 
     &__title {
       text-align: center;
-      text-transform: uppercase;
-      font-weight: bold;
-      font-size: 30px;
-      line-height: 55px;
+      font-weight: 800;
       margin-bottom: 60px;
+      @media (max-width: 576px) {
+        margin-bottom: 30px;
+      }
     }
   }
   
@@ -44,4 +44,4 @@
     }
   }
 
-}
+// }

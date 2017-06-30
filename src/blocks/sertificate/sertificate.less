@@ -1,26 +1,37 @@
-@media (min-width: 768px) {
+// @media (min-width: 768px) {
 
   .sertificate {
     display: block;
     padding-top: 80px;
 
     &__title {
-      font-size: 30px;
-      line-height: 55px;
-      font-weight: bold;
-      text-transform: uppercase;
+      font-weight: 800;
       text-align: center;
       margin-bottom: 60px;
+      @media (max-width: 576px) {
+        margin-bottom: 20px;
+      }
     }
 
     &__text {
       font-size: 16px;
       line-height: 26px;
       margin-bottom: 85px;
+      @media (max-width: 576px) {
+        margin-bottom: 40px;
+      }
     }
 
     &__approve {
       margin-bottom: 60px;
+
+      a {
+        color: @blue;
+      }
+
+      @media (max-width: 576px) {
+        margin-bottom: 50px;
+      }
     }
   }
 
@@ -29,6 +40,7 @@
       position: relative;
       padding-left: 35px;
       margin-bottom: 50px;
+      color: @blue;
 
       &:before {
         position: absolute;
@@ -48,4 +60,4 @@
     }
 
 
-}
+// }

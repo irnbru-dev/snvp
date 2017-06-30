@@ -1,6 +1,9 @@
-@media (min-width: 768px) {
+// @media (min-width: 768px) {
   .news-open {
-    display: block;
+    
+    @media (max-width: 576px) {
+      margin-bottom: 75px;
+    }
 
     & a {
       color: @black;
@@ -14,12 +17,18 @@
       line-height: 30px;
       font-weight: bold;
       margin-bottom: 50px;
+      @media (max-width: 576px) {
+        margin-bottom: 20px;
+      }
     }
 
     &__description {
       font-size: 16px;
       line-height: 26px;
       margin-bottom: 25px;
+      @media (max-width: 576px) {
+        margin-bottom: 18px;
+      }
     }
 
     &__date {
@@ -46,4 +55,4 @@
   }
 
 
-}
+// }

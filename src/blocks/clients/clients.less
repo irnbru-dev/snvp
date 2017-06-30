@@ -1,6 +1,6 @@
 .clients{
   padding-top: 80px;
-  padding-bottom: 80px;
+  padding-bottom: 40px;
 
   h2 {
     text-align: center;
@@ -11,6 +11,7 @@
   .item {
     text-align: center;
     vertical-align: bottom;
+    margin-bottom: 40px;
   }
 
   .item > p {
@@ -21,7 +22,13 @@
 
   .img-box {
     height: 100px;
+    overflow: hidden;
     display: flex;
+    flex-direction: row;
     justify-content: center;
+
+    img {
+      vertical-align: middle;
+    }
   }
 }

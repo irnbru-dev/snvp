@@ -1,7 +1,10 @@
-@media (min-width: 768px) {
+// @media (min-width: 768px) {
   .news-close {
-    display: block;
     margin-bottom: 50px;
+    
+    @media (max-width: 576px) {
+      margin-bottom: 75px;
+    }
 
     & a {
       color: @black;
@@ -29,4 +32,4 @@
   }
 
 
-}
+// }
