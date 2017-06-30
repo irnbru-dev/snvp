@@ -7,115 +7,22 @@
     <meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1.0">
     <title>SNVP</title>
     <link rel="canonical" href="/">
-    <!--TODO: Этот шрифт нужен?-->
-    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700,700i" rel="stylesheet">
-    <!--TODO: Этот файл нужен?-->
-    <link rel="stylesheet" href="css/style.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800&amp;amp;subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800&amp;amp;subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
-    <!--TODO: Шрифты подключаем самыми первыми, до стилей-->
-
   </head>
-  <!--TODO: по меню для всех
-1. .navbar {border: none}
--->
-
-  <!--TODO: по меню для (max-width: 991px)
-1. Логотип?
-3. Кнопка:
-.navbar-toggle {
-  width: 20px /*36px*/;
-  height: 16px /*40px*/;
-  padding: 15px;
-  margin-top: 9px;
-  margin-right: -8px;
-  /*margin-top: 3px;
-  margin-bottom: 0;
-  padding-right: 0;*/
-  }
-  .navbar-toggle .icon-bar {
-    /*top: 20px;*/
-    height: 2px /*4px*/;
-    width: 20px /*26px*/;
-  }
-  .navbar-toggle .icon-bar::before,
-  .navbar-toggle .icon-bar::after {
-    height: 2px /*4px*/;
-    width: 20px /*26px*/;
-  }
-  .navbar-toggle .icon-bar::before {
-    top: -7px /*-12px*/;
-  }
-  .navbar-toggle .icon-bar::after {
-    bottom: -7px /*-12px*/;
-  }
-4. Зафиксим меню:
-  .navbar {
-    position: fixed;
-    left: 0;
-    right: 0;
-    z-index: 1030;
-  }
-5. Фикс планшетов:
-  .navbar-nav .open .dropdown-menu {
-    position: static;
-    float: none;
-    width: auto;
-    margin-top: 0;
-    background-color: transparent;
-    border: 0;
-    -webkit-box-shadow: none;
-    box-shadow: none;
-  }
-
-
--->
-
-  <!--TODO: по меню для (min-width: 992px)
-  1. В макете максимальная ширина выпадайки 329px, поэтому нижний (самый длинный) пункт меню переносится на другую строку.
-     .navbar .dropdown-menu {
-        max-width: 329px;
-        padding: 45px 10px 20px 10px;
-     }
-  2. line-height пунктов выпадающего меню должен быть ~24px
-  3. font-size всего меню 14px, а не 13 как у тебя
-  4. Текст пунктов выпадающего меню НЕ апперкейс
-  5. .navbar .dropdown-menu > li > a { /*.navbar .subnav-item a*/
-        font-size: 14px; /*13px*/
-        font-weight: 600; /*semibold*/
-        padding-top: 8px; /*15px*/
-        padding-bottom: 8px; /*15px*/
-            text-transform: none;
-      }
-  6. .navbar .dropdown-menu > li:first-child {
-        padding-top: 0;
-      }
-  7. .dropdown-menu > li > a {
-        white-space: normal;
-      }
-  8. расстояние между пунктом меню и шевроном 10px
-     .navbar .glyphicon {
-        margin-left: 6px; /*10px;*/
-      }
-  9. полоска под меню должна быть вровень с текстом
-     .navbar .nav-item:hover:after {
-        left: 16px; /*12px;*/
-      }-->
-
   <body>
     <main>
       <nav class="navbar">
         <div class="navbar-header">
           <div class="container">
-            <div class="pull-left">Logo</div>
+            <div class="pull-left img">Logo</div>
             <button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
               <span class="icon-bar"></span>
             </button>
           </div>
         </div>
         <div class="container">
-
           <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav">
               <li class="dropdown nav-item">
