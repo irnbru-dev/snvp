@@ -48,6 +48,27 @@
     height: 50px;
   }
 
+  .logo {
+    text-transform: uppercase;
+    margin-top: 5px;
+    @media (min-width: 768px) {
+      margin-left: 15px;
+    }
+
+    .name {
+      font-size: 24px;
+      font-weight: 700;
+    }
+    .txt {
+      font-size: 6px;
+      line-height: 14px;
+      font-weight: 700;
+      margin-top: -17px;
+      margin-bottom: 0;
+      padding-bottom: 0;
+    }
+  }
+
   .navbar {
     display: block;
     background-color: @blue-dark;
@@ -64,6 +85,9 @@
       font-weight: bold;
       padding-top: 20px;
       padding-bottom: 20px;
+      @media (min-width: 768px) and (max-width: 991px) {
+        padding-left: 0;
+      }
 
       &:hover, &:active, &:focus {
         color: @blue;
@@ -218,6 +242,10 @@
     padding-top: 40px;
     padding-bottom: 40px;
 
+      .logo {
+        display: none;
+      }
+
     .nav-item {
       position: relative;
       
@@ -256,7 +284,7 @@
       width: 330px;
     }
 
-    .dropdown-menu > li:first-child {
+    .dropdown-menu > li:first-child a{
       padding-top: 0;
     }
 
@@ -269,7 +297,6 @@
       padding-bottom: 8px;
       text-transform: none;
     }
-
 
     .subnav-item a:hover {
       color: @green;
