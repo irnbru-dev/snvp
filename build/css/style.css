@@ -62,7 +62,7 @@ h2 {
   border: none;
 }
 .main-promo {
-  background-image: url(/img/index/main-promo-bg.jpg);
+  background-image: url(../img/index/main-promo-bg.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -183,15 +183,15 @@ h2 {
 }
 .boat-card__people:before {
   background-color: red;
-  background-image: url(../../img/index/boatcard-people.svg);
+  background-image: url(../img/index/boatcard-people.svg);
 }
 .boat-card__width:before {
   background-color: green;
-  background-image: url(/img/index/boatcard-width.svg);
+  background-image: url(../img/index/boatcard-width.svg);
 }
 .boat-card__lenght:before {
   background-color: red;
-  background-image: url(/img/index/boatcard-lenght.svg);
+  background-image: url(../img/index/boatcard-lenght.svg);
 }
 .boat-card__btn {
   margin-left: 30px;
