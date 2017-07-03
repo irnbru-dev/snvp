@@ -7,10 +7,20 @@
   }
 
   &--arrow {
+    position: relative;
     padding-right: 50px;
 
     &:after {
-      background-image: url(images/);
+      position: absolute;
+      content: '';
+      display: inline-block;
+      
+      width: 15px;
+      height: 7px;
+      top: 14px;
+      right: 10px;
+
+      background-image: url(/img/index/strelka.png);
       background-repeat: no-repeat;
       background-size: 100%;
     }

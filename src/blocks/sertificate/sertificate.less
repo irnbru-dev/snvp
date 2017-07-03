@@ -2,7 +2,7 @@
 
   .sertificate {
     display: block;
-    padding-top: 80px;
+    padding-top: 40px;
 
     &__title {
       font-weight: 800;
@@ -16,7 +16,7 @@
     &__text {
       font-size: 16px;
       line-height: 26px;
-      margin-bottom: 85px;
+      margin-bottom: 65px;
       @media (max-width: 576px) {
         margin-bottom: 40px;
       }
@@ -38,26 +38,42 @@
   .linktosertificate {
       display: block;
       position: relative;
-      padding-left: 35px;
+      padding-left: 50px;
       margin-bottom: 50px;
       color: @blue;
+
+      // .jpg:before {
+      //     background-image: url(/img/index/jpg.png);
+      // }
+
+      // .pdf:before {
+      //     background-image: url(/img/index/pdf.png);
+      // }
+
+      // .png:before {
+      //     background-image: url(/img/index/png.png);
+      // }
+
+      // .doc:before {
+      //     background-image: url(/img/index/doc.png);
+      // }
 
       &:before {
         position: absolute;
         content: '';
         display: inline-block;
         
-        left: 0;
-        top: 5px;
-        width: 20px;
-        height: 20px;
+        left: -1px;
+        // top: 5px;
+        width: 33px;
+        height: 47px;
 
-        background-image: url(images/);
         background-size: 100%;
         background-repeat: no-repeat;
-        background-color: @green;
+        background-image: url(/img/index/doc.png);
+        }
       }
-    }
+    // }
 
 
 // }

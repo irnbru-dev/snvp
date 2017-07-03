@@ -14,12 +14,28 @@
       }
     }
 
+    .table {
+      display: table;
+    }
+
+    .table-row {
+      display: table-row;
+    }
+
     &__date, &__author, &__topic {
       color: @grey;
+      display: table-cell;
+      text-align: center;
+      padding-left: 10px;
+      padding-right: 10px;
 
       &:hover, &:visited {
         color: @grey;
       }
+    }
+
+    &__date, &__author {
+      border-right: 1px solid @grey;
     }
 
     &__author, &__topic {
@@ -29,7 +45,27 @@
     }
 
     &__date {
+      position: relative;
       padding-left: 30px;
+      @media (max-width: 768px) {
+        text-align: left;
+        border-right: none;
+      }
+
+      &:before {
+        position: absolute;
+        content: '';
+        display: inline-block;
+        
+        width: 15px;
+        height: 15px;
+        left: 0;
+        top: 4px;
+
+        background-image: url(/img/index/calendar.png);
+        background-repeat: no-repeat;
+        background-size: 100%;
+      }
     }
   }
 
