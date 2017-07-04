@@ -2,16 +2,16 @@ mixin form-adv()
   section.form-adv&attributes(attributes)
     div.container
       div.row
-        div.form.col-sm-12.col-md-6
+        div.form-adv__item.form.col-sm-12.col-md-6
           h2 Вам перезвонить?
           p Если вы не нашли нужной информации у нас на сайте мы может перезвонить и ответить на Ваш вопрос.
           form
             label Имя
-              input(type='text', placeholder='Константин Константиновский')
+              input(type='text', placeholder='')
             label Телефон
               input(type='tel', placeholder='+7 921 999 ..')
             input(type='submit', value='Получить информацию')
-        div.adv.col-sm-12.col-md-6
+        div.form-adv__item.adv.col-sm-12.col-md-6
           h2 Преимущества
           div.adv-item
             h3 Проходимость

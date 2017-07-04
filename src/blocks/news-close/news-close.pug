@@ -1,6 +1,7 @@
 mixin news-close(href, title, description, date)
   article.news-close&attributes(attributes)
-    a.news-close__inner(href= href)
-      h3.news-close__title= title
+    div.news-close__inner
+      h3.news-close__title
+        a(href= href)= title
       p.news-close__description= description
       p.news-close__date= date

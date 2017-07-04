@@ -149,25 +149,51 @@ gulp.task('img', function () {
 });
 
 // Creation png-sprites
+// gulp.task('png-sprites', function () {
+//   var spriteData = gulp.src(path.src.pngSprites)
+//     .pipe(spritesmith({
+//       imgName: 'png-sprite.png',
+//       imgPath: '../img/png-sprite.png',
+//       padding: 1,
+//       cssFormat: 'less',
+//       algorithm: 'binary-tree',
+//       cssName: '_png-sprite.less'
+//       // cssVarMap: function(sprite) {
+//       //   sprite.name = 'icon-' + sprite.name
+//       // }
+//     }));
+
+//   spriteData.img
+//     .pipe(gulp.dest(path.build.pngSprites));
+
+//   return spriteData.css
+//     .pipe(gulp.dest(path.build.pngSpritesCss));
+// });
+
+//SPRITE-ICONS
 gulp.task('png-sprites', function () {
-  var spriteData = gulp.src(path.src.pngSprites)
-    .pipe(spritesmith({
-      imgName: 'png-sprite.png',
-      imgPath: '../img/png-sprite.png',
-      padding: 1,
-      cssFormat: 'less',
-      algorithm: 'binary-tree',
-      cssName: '_png-sprite.less'
-      // cssVarMap: function(sprite) {
-      //   sprite.name = 's-' + sprite.name
-      // }
-    }));
+    var fileName = 'png-sprite.png';
 
-  spriteData.img
-    .pipe(gulp.dest(path.build.pngSprites));
+    var spriteData = gulp.src(path.src.pngSprites)
+        .pipe(spritesmith({
+            imgName: fileName,
+            imgPath: '../img/png-sprite.png',
+            cssName: 'sprite.less',
+            cssFormat: 'less',
+            padding: 2,
+            algorithm: 'binary-tree',
+            cssVarMap: function (sprite) {
+                sprite.name = 'icon-' + sprite.name;
+            }
+        }));
 
-  return spriteData.css
-    .pipe(gulp.dest(path.build.pngSpritesCss));
+    spriteData.img
+        .pipe(gulp.dest(path.build.pngSprites));
+
+    spriteData.css
+        .pipe(gulp.dest(path.build.pngSpritesCss));
+
+    return spriteData;
 });
 
 // Copying fonts

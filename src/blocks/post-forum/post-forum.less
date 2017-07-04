@@ -3,68 +3,37 @@
     display: block;
     margin-bottom: 40px;
 
-    &__title {
+    &__title a {
       font-size: 16px;
       line-height: 26px;
       color: @black;
 
       &:hover, &:visited {
         color: @black;
-        text-decoration: none;
+        // text-decoration: none;
       }
     }
 
     .table {
       display: table;
+      width: 100%;
     }
 
     .table-row {
       display: table-row;
     }
 
-    &__date, &__author, &__topic {
-      color: @grey;
+    &__subinfo {
       display: table-cell;
       text-align: center;
-      padding-left: 10px;
-      padding-right: 10px;
-
-      &:hover, &:visited {
-        color: @grey;
-      }
-    }
-
-    &__date, &__author {
+      // padding-left: 10px;
+      // padding-right: 10px;
       border-right: 1px solid @grey;
-    }
-
-    &__author, &__topic {
-      @media (max-width: 768px) {
-        display: none;
-      }
-    }
-
-    &__date {
-      position: relative;
-      padding-left: 30px;
-      @media (max-width: 768px) {
-        text-align: left;
+      &:last-child {
         border-right: none;
       }
-
-      &:before {
-        position: absolute;
-        content: '';
-        display: inline-block;
-        
-        width: 15px;
-        height: 15px;
-        left: 0;
-        top: 4px;
-
-        background-image: url(/img/index/calendar.png);
-        background-repeat: no-repeat;
-        background-size: 100%;
+      span {
+        color: @grey;
       }
     }
   }

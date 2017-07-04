@@ -1,7 +1,8 @@
 mixin news-open(href, title, description, date, src, detailsHref)
   article.news-open&attributes(attributes)
-    a.news-open__inner(href= href)
-      h3.news-open__title= title
+    div.news-open__inner(href= href)
+      h3.news-open__title
+        a(href= href)= title
       p.news-open__description= description
       p.news-open__date= date
       div.news-open__img-box
