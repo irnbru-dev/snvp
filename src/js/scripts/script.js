@@ -1,8 +1,9 @@
-$(function(){
-  $(window).on('load resize', function () {
-    equalHeights('.news-item');
+$(function () {
+    $(window).on('load resize', function () {
+        equalHeights('.news-item');
+        equalHeights('.form-adv__item');
+    });
 });
-})
 
 
 /**
@@ -10,6 +11,8 @@ $(function(){
  * @string elementsClass - selector for blocks to be "equaled", for example '.my-class'
  */
 function equalHeights(elementsClass) {
+    var tabletWidthStart = 768;
+
     if (elementsClass) {
         var height = 0,
             elements = document.querySelectorAll(elementsClass);

@@ -100,7 +100,7 @@ gulp.task('pug', function() {
     }))
     .pipe(debug())
     .pipe(gulp.dest(path.build.html))
-})
+});
 
 // Compilation less
 gulp.task('less', function () {
@@ -114,7 +114,7 @@ gulp.task('less', function () {
     // .pipe(debug({title: 'less'})) 
     .pipe(postcss([
       autoprefixer({ browsers: ['last 5 version'] }),
-      mqpacker({ sort: true }),
+      mqpacker({ sort: true })
     ]))
     .pipe(plumber({ errorHandler: onError }))
     .pipe(debug({title: 'PostCss'})) 
@@ -127,7 +127,6 @@ gulp.task('less', function () {
 });
 
 // Compilation js v2
-// TODO: exclude jquery from path.src.js
 // (If jquery is used from 3rd party, and you need to exclude it from script.min.js, you should manually put all required .js files into path.src.js directory)
 gulp.task('js', function() {
   return gulp.src(path.src.js)
