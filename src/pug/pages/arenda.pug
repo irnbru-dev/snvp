@@ -1,0 +1,42 @@
+extends ../layout/_layoutBase.pug
+
+block content
+
+  +main-nav()
+
+  div.container
+    ol.breadcrumb
+      li.breadcrumb-item
+        a(href='index.html') Главная
+        span.glyphicon.glyphicon-chevron-right
+      li.breadcrumb-item.active Аренда
+
+  div.arenda
+    div.container
+      h2.title Аренда
+    +arenda-map()
+    div.map
+      div.container
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d64086.944330880695!2d29.01340746327396!3d59.870444965025854!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46968a4c7cbe4cdb%3A0x41de63ddb2b30bd7!2z0KHQvtGB0L3QvtCy0YvQuSDQkdC-0YAsINCb0LXQvdC40L3Qs9GA0LDQtNGB0LrQsNGPINC-0LHQuy4!5e0!3m2!1sru!2sru!4v1499258311355" width="100%" height="360" frameborder="0" style="border:0" allowfullscreen></iframe>
+  
+  div.arenda-cards
+    div.container
+      div.row
+        div.boat-item.col-xs-12.col-sm-6.col-md-3
+          +boat-card('./img/index/boat-card-1.jpg', 'SNVP-551', 'СНВП-551', 'Катер на воздушной подушке', '4-5 чел.', '450 кг', '5 м', '')
+        div.boat-item.col-xs-12.col-sm-6.col-md-3
+          +boat-card('./img/index/boat-card-2.jpg', 'SNVP-551', 'СНВП-551', 'Катер на воздушной подушке', '4-5 чел.', '450 кг', '5 м', '')
+        div.boat-item.col-xs-12.col-sm-6.col-md-3
+          +boat-card('./img/index/boat-card-3.jpg', 'SNVP-551', 'СНВП-551', 'Катер на воздушной подушке', '4-5 чел.', '450 кг', '5 м', '')
+        div.boat-item.col-xs-12.col-sm-6.col-md-3
+          +boat-card('./img/index/boat-card-4.jpg', 'SNVP-551', 'СНВП-551', 'Катер на воздушной подушке', '4-5 чел.', '450 кг', '5 м', '')
+
+  div.arenda-garanty
+    div.container
+      div.row
+        div.col-md-6
+          p Все катера лицензированы, а пассажиры застрахованы. Наши капитаны профессионалы, наши цены от судовладельца.Очень удобно использовать СВП для активного отдыха, рыбалки, туристических поездок по заповедным местам.
+        div.col-md-6
+          p Аренда катера на воздушной подушке удобна для путешествий по заповедным уголкам,  рыбалки и других видов отдыха, обойдется она не намного дороже аренды обычного маломерного катера, но последующих впечатлений будет неизмеримо больше.
+
+  +footer()

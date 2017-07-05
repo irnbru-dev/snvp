@@ -1,10 +1,11 @@
 $(function () {
     $(window).on('load resize', function () {
         equalHeights('.news-item');
+        equalHeights('.community-item');
         equalHeights('.form-adv__item');
+
     });
 });
-
 
 /**
  * Provides equal height to all elements with selector specified

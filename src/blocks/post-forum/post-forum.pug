@@ -1,11 +1,12 @@
 mixin post-forum(href, title, date, author, topic)
   section.post-forum&attributes(attributes)
     div.inner(href= href)
-      p.post-forum__title
+      h4.post-forum__title
         a(href= href)= title
       div.table
         div.table-row
           div.post-forum__subinfo
+            span.sprite-icon.icon-calendar
             span= date
           div.post-forum__subinfo
             span= author

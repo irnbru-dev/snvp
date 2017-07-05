@@ -35,6 +35,13 @@
       span {
         color: @grey;
       }
+      @media (max-width: 992px) {
+        border: none;
+        text-align: left;
+        &:not(:first-child) {
+          display: none;
+        }
+      }
     }
   }
 

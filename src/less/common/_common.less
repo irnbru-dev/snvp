@@ -13,8 +13,9 @@ body {
 h1 {
   font-size: 40px;
   line-height: 55px;
-  font-weight: bold;
+  font-weight: 800;
   text-transform: uppercase;
+  color: @black;
 }
 
 h2 {
@@ -22,6 +23,28 @@ h2 {
   line-height: 55px;
   font-weight: 800;
   text-transform: uppercase;
+  color: @black;
+}
+
+.breadcrumb {
+  background-color: transparent !important;
+  margin-top: 15px;
+}
+
+.breadcrumb > li + li:before {
+  content: none;
+}
+
+.breadcrumb > li > a {
+  color: #2491dd;
+  text-decoration: underline;
+}
+
+.glyphicon-chevron-right {
+  font-size: 9px;
+  line-height: 20px;
+  color: #9a9a9a;
+  margin-top: -3px;
 }
 
 // h3 {

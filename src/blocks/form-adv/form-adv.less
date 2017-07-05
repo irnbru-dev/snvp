@@ -10,9 +10,13 @@
     padding-top: 45px;
     padding-left: 100px;
     padding-right: 150px;
-    @media (max-width: 768px) {
+    @media (max-width: 767px) {
       padding-left: 20px;
       padding-right: 20px;
+    }
+
+    h2 {
+      color: @white;
     }
 
     p {
@@ -76,6 +80,8 @@
     }
 
     h3 {
+      font-size: 20px;
+      line-height: 26px;
       font-weight: 800;
       text-transform: uppercase;
     }
@@ -83,7 +89,35 @@
     p {
       font-size: 16px;
       line-height: 26px;
-      margin-bottom: 55px;
+      margin-bottom: 35px;
+    }
+
+    .shape {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 120px;
+      height: 120px;
+      background-color: #334d7d;
+      border-radius: 70px;
+    }
+    
+    .adv-item__icons {
+      display: flex;
+      justify-content: center;
+      @media (min-width: 992px) {
+        display: inline-block;
+        margin-left: -150px;
+        vertical-align: top;
+      }
+    }
+    .content {
+      margin-top: 20px;
+      @media (min-width: 992px) {
+        display: inline-block;
+        margin-left: 55px;
+        margin-top: 0;
+      }
     }
   }
 }

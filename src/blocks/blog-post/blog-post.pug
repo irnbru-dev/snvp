@@ -3,6 +3,7 @@ mixin blog-post(href, title, date, src)
     div.inner(href= href)
       h3.blog-post__title
         a(href= href)= title
+      span.sprite-icon.icon-calendar
       p.blog-post__date= date
       div.blog-post__img-box
         img(src= src)

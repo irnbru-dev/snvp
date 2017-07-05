@@ -6,8 +6,11 @@ mixin boat-card(src, alt, title, subtitle, people, weight, length, href)
       h3.boat-card__title= title
       p.boat-card__subtitle= subtitle
       div.boat-card__about
+        span.sprite-icon.icon-boatcard-people
         p.boat-card__people= people
+        span.sprite-icon.icon-boatcard-width
         p.boat-card__weight= weight
+        span.sprite-icon.icon-boatcard-lenght
         p.boat-card__length= length
       a.boat-card__btn.btn.btn--bordered(href= href) Узнать цену
       block

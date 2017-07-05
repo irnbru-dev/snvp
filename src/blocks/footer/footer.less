@@ -1,3 +1,24 @@
+.footer {
+  &__socials {
+    list-style: none;
+    padding-left: 0;
+    text-align: right;
+    float: right;
+    margin-top: 10px;
+    li {
+      display: inline-block;
+      margin-left: 30px;
+    }
+    @media (max-width: 991px) {
+      text-align: center;
+      li {
+        padding-bottom: 15px;
+      }
+    }
+  }
+}
+
+
 @media (max-width: 991px) {
   .footer {
     background-color: @blue-dark;
@@ -13,9 +34,10 @@
       // border: 1px solid red;
       order:1;
       margin-top: 40px;
-      padding-bottom: 40px;
+      padding-bottom: 50px;
       height: 20px;
       border-bottom: 2px solid @white;
+      vertical-align: middle;
     }
 
     &__logo {
@@ -151,15 +173,6 @@
 
     &__linktomap {
       margin-right: 80px;
-    }
-
-    &__socials {
-      border: 1px solid red;
-      width: 180px; //удалить
-      height: 20px; //удалить
-      text-align: right;
-      float: right;
-      margin-top: 10px;
     }
 
     &__footer-main {

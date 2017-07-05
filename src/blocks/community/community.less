@@ -15,7 +15,21 @@
   }
 
   .community-item {
+    position: relative;
     margin-bottom: 80px;
+
+    &__all {
+      position: absolute;
+      display: inline-block;
+      content: '';
+
+      left: 15px;
+      bottom: 0;
+      
+      &:hover, &:visited {
+        color: @white;
+      }
+    }
 
     &__new-post, &__new-on-forum {
       color: @grey;
@@ -28,6 +42,8 @@
       white-space: nowrap;
       max-width: 200px; //подумать как по-другому
       margin-bottom: 25px;
+
+
     }
   }
 

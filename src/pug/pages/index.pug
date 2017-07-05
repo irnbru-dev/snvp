@@ -30,11 +30,13 @@ block content
         div.row
           div.news-item.col-md-6
             +news-open('#', 'Во время гонки «ВолгаХоверШоу» перевернулось судно на воздушной подушке «Пегас».', 'В минувшую субботу, 27 февраля, во время одного из заездов гонки «ВолгаХоверШоу», проходившей в Нижнем Новгороде, один из участвовавших в ней катеров перевернулся во время выполнения маневра.', 'март 01, 2015', './img/index/news-photo.jpg')
-            a.news-item__details.btn.btn--blue.btn--arrow(href='#') Подробнее
+            a.news-item__all.btn.btn--blue(href='#') Подробнее
+              span.sprite-icon.icon-strelka
           div.news-item.col-md-6
             +news-close('#', 'В продаже появилось судно на воздушной подушке «Нептун-23»', 'Продается СВП «Нептун-23». Построен в феврале 2016 года. Есть все документы Российского Речного Регистра', 'Август 19, 2015')
             +news-close('#', 'Судно на воздушной подушке в наличие', 'СВП с уникальной схемой гибкого ограждения и авторским дизайном внешнего вида для частного использования (документы ГИМС)', 'март 01, 2015')
-            a.news-item__all.btn.btn--blue.btn--arrow(href= '#') Все новости
+            a.news-item__all.btn.btn--blue(href= '#') Все новости
+              span.sprite-icon.icon-strelka
 
     +community()
       div.container
@@ -42,11 +44,15 @@ block content
           div.community-item.col-md-6
             div.community-item__new-post Новый пост в блоге
             +blog-post('', 'Лизинг судов на воздушной подушке всех моделей марки "СНВП"', 'Август 19, 2016', './img/index/news-photo.jpg')
+            a.community-item__all.btn.btn--blue(href= '#') Блог
+              span.sprite-icon.icon-strelka
           div.community-item.col-md-6
             div.community-item__new-on-forum Новые темы на форуме
             +post-forum('#', 'Люфт рулевого троса управления', 'март 01, 2016', 'Gleb Ryabov', 'Моторные лодки и катера')
             +post-forum('#', 'Выбор катера для новичка', 'март 01, 2016', 'Gleb Ryabov', 'Моторные лодки и катера')
             +post-forum('#', 'Рыболовная кастрюля / прогулочный пластик или fish&ski?', 'март 01, 2016', 'Gleb Ryabov', 'Моторные лодки и катера')
+            a.community-item__all.btn.btn--blue(href= '#') Форум
+              span.sprite-icon.icon-strelka
 
     +sertificate()
 
