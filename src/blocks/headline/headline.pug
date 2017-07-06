@@ -1,0 +1,19 @@
+mixin headline(lastTab, title)
+  section.headline&attributes(attributes)
+    div.container
+      ol.breadcrumb
+        li.breadcrumb-item
+          a(href='index.html') Главная
+          span.glyphicon.glyphicon-chevron-right
+        block
+        li.breadcrumb-item.active= lastTab
+      h2.page-title= title
+
+
+//- If you need more Tabs - attach to parent elem lines like:
+    li.breadcrumb-item
+      a(href= secondHref)= secondTab
+      span.glyphicon.glyphicon-chevron-right
+    li.breadcrumb-item
+      a(href= thirdHref)= thirdTab
+      span.glyphicon.glyphicon-chevron-right

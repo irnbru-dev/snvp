@@ -27,11 +27,6 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      // border: 1px solid red;
-
-      img {
-        // vertical-align: middle;
-      }
     }
 
     &__link-txt {
@@ -42,6 +37,7 @@
       
       &:hover, &:visited {
         color: @white;
+        text-decoration: none;
       }
     }
 }
@@ -55,6 +51,7 @@
       font-size: 30px;
       line-height: 45px;
       margin-bottom: 30px;
+      color: @white;
     }
 
     &__phone-box {
@@ -72,12 +69,8 @@
   .main-promo {
     padding-bottom: 80px;
     text-align: center;
-
-    h1 {
-      padding-top: 30px;
-      @media (min-width: 768px) and (max-width: 992px) {
-        padding-top: 80px;
-      }
+    @media (min-width: 768px) and (max-width: 991px) {
+      padding-top: 100px;
     }
 
     &__phone-box {
@@ -85,12 +78,16 @@
     }
   
     &__title {
+      padding-top: 30px;
       margin-top: 30px;
       margin-bottom: 150px;
       font-size: 40px;
       line-height: 55px;
       font-weight: 800;
       color: @white;
+      @media (min-width: 768px) and (max-width: 991px) {
+        margin-bottom: 80px;
+      }
     }
 
     &__more {

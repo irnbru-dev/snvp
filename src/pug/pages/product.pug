@@ -1,0 +1,30 @@
+extends ../layout/_layoutBase.pug
+
+block content
+
+  +main-nav()
+
+  +headline('Griffon Hoverwork 1050TD', 'Griffon Hoverwork 1050TD')
+    li.breadcrumb-item
+      a(href='catalog.html') Каталог
+      span.glyphicon.glyphicon-chevron-right
+    li.breadcrumb-item
+      a(href='#') Суда на воздушной подушке
+      span.glyphicon.glyphicon-chevron-right
+
+  +product-card()
+
+  div.product-cards
+    div.container
+      h2 Похожие модели
+      div.row
+        div.boat-item.col-xs-12.col-sm-6.col-md-3
+          +boat-card('./img/index/boat-card-1.jpg', 'SNVP-551', 'СНВП-551', 'Катер на воздушной подушке', '4-5 чел.', '450 кг', '5 м', '')
+        div.boat-item.col-xs-12.col-sm-6.col-md-3
+          +boat-card('./img/index/boat-card-2.jpg', 'SNVP-551', 'СНВП-551', 'Катер на воздушной подушке', '4-5 чел.', '450 кг', '5 м', '')
+        div.boat-item.col-xs-12.col-sm-6.col-md-3
+          +boat-card('./img/index/boat-card-3.jpg', 'SNVP-551', 'СНВП-551', 'Катер на воздушной подушке', '4-5 чел.', '450 кг', '5 м', '')
+        div.boat-item.col-xs-12.col-sm-6.col-md-3
+          +boat-card('./img/index/boat-card-4.jpg', 'SNVP-551', 'СНВП-551', 'Катер на воздушной подушке', '4-5 чел.', '450 кг', '5 м', '')
+
+  +footer()

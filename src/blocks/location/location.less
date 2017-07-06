@@ -1,0 +1,111 @@
+.location{
+  display: block;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  @media (max-width: 991px) {
+    padding-top: 70px;
+    padding-bottom: 60px;
+  }
+
+  .contact-item {
+    margin-bottom: 10px;
+  }
+
+  .address {
+    font-size: 16px;
+    line-height: 26px;
+  }
+
+  .phone {
+    font-size: 30px;
+    line-height: 55px;
+    span {
+      font-weight: 800;
+    }
+  }
+
+  .email {
+    color: @blue;
+    text-decoration: underline;
+  }
+
+  .contact-map {
+    @media (max-width: 991px) {
+      display: none;
+    }
+  }
+}
+
+
+.requisites {
+  background-color: @grey-light;
+  padding-top: 50px;
+  padding-bottom: 70px;
+
+  h3 {
+    font-weight: 800;
+    margin-bottom: 15px;
+  }
+
+  table {
+    font-size: 14px;
+    line-height: 30px;
+  }
+
+  .name {
+    width: 130px;
+    font-weight: 700;
+  }
+}
+
+.contact-subnav {
+  background-color: #334d7d;
+  color: @white;
+
+  ul {
+    list-style: none;
+    padding-left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    @media (max-width: 767px) {
+      display: none;
+    }
+  }
+
+  a {
+    color: @white;
+    text-decoration: none;
+    border-bottom: 1px dashed @blue;
+    &:hover, &:active {
+      border-bottom: 3px solid @blue;
+    }
+  }
+  
+  .select-title {
+    color: @blue;
+    margin-top: 20px;
+    @media (min-width: 768px) {
+      display: none;
+    }
+  }
+
+  select {
+    display: inline-block;
+    width: 100%;
+    height: 60px;
+    background-color: #334d7d;
+    border: none;
+    border-radius: 0;
+    font-size: 16px;
+    line-height: 26px;
+    outline: 2px solid @blue;
+    margin-bottom: 40px;
+    @media (min-width: 768px) {
+      display: none;
+    }
+  }
+}

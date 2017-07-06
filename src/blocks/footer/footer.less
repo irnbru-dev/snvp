@@ -87,8 +87,7 @@
     display: block;
     position: relative;
     background-color: @blue-dark;
-    // padding-top: 20px;
-    padding-bottom: 222px;
+    padding-bottom: 60px;
 
     &__phone-box {
       display: block;
@@ -136,10 +135,14 @@
     }
 
     &__logo {
-      color: @white;
+      color: #f2f2f2;
       text-transform: uppercase;
       margin-right: 60px;
       margin-top: -10px;
+      &:hover, &:visited {
+        color: @white;
+        text-decoration: none;
+      }
 
       .name {
         font-size: 30px;
@@ -161,7 +164,7 @@
 
     &__linktomap, &__linktocatalog {
       display: inline-block;
-      color: @white;
+      color: #b0b5c5;
       font-size: 13px;
       line-height: 26px;
       text-decoration: underline;
@@ -205,12 +208,15 @@
     }
 
     &__sublink a {
-      color: @white;
+      color: #b0b5c5;
       font-size: 13px;
       line-height: 20px;
       font-weight: normal;
       text-transform: none;
       text-decoration: underline;
+      &:hover {
+        color: @white;
+      }
     }
   }
 

@@ -1,0 +1,53 @@
+mixin location()
+  section.location&attributes(attributes)
+    div.container
+      div.row
+        div.col-md-3
+          div.contact-item
+            span.sprite-icon.icon-contacti-address
+            span.address ул. Цветочная д.19, оф. 4
+          div.contact-item
+            span.sprite-icon.icon-contacti-phone
+            span.phone +7 812
+              span 927 36 66
+          div.contact-item
+            span.sprite-icon.icon-contacti-email
+            a(href='#').email info@snvp.su
+        div.col-md-8.col-md-offset-1
+          div.contact-map
+            <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Aec1883b2d7167fb58926b3509a05429ab1e87a8cab2099158e893171f6243ce3&amp;width=100%25&amp;height=250&amp;lang=ru_RU&amp;scroll=true"></script>
+  section.requisites
+    div.container
+      h3 Реквизиты компании
+      div.row
+        div.col-md-6
+          table
+            tr
+              td.name Организация: 
+              td.value ООО «СНВП»
+            tr
+              td.name Адрес: 
+              td.value 127411, г. Москва, Дмитровское ш.,д. 157, стр. 9, каб. 93-142
+            tr
+              td.name ОГРН: 
+              td.value 1167746880322
+            tr
+              td.name ИНН:
+              td.value 7713421082
+            tr
+              td.name ОКПО: 
+              td.value 04636746
+        div.col-md-6
+          table
+            tr
+              td.name ОКТМО: 
+              td.value 45339000000
+            tr
+              td.name К/с: 
+              td.value 30101810300000000811
+            tr
+              td.name БИК: 
+              td.value 044030811
+            tr
+              td.name КПП: 
+              td.value 771301001
