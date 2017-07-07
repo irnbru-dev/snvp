@@ -1,0 +1,12 @@
+mixin filtr()
+  section.filtr&attributes(attributes)
+    div.container
+      form
+        input(type='checkbox',name='option',value='a1',id='commerc')
+        label(for='commerc') Коммерческие перевозки
+        input(type='checkbox',name='option',value='a2',id='public')
+        label(for='public') Государственные проекты
+        input(type='checkbox',name='option',value='a3',id='privat')
+        label(for='privat') Частное использование
+        input(type='radio', id='secondhand')
+        label(for='secondhand') Б/у

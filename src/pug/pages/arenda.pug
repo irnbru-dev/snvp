@@ -4,7 +4,7 @@ block content
 
   +main-nav()
 
-  +headline('Аренда', 'Аренда')
+  +headline('Аренда', 'Аренда', '')
 
   +arenda-map()
   
@@ -12,13 +12,21 @@ block content
     div.container
       div.row
         div.boat-item.col-xs-12.col-sm-6.col-md-3
-          +boat-card('./img/index/boat-card-1.jpg', 'SNVP-551', 'СНВП-551', 'Катер на воздушной подушке', '4-5 чел.', '450 кг', '5 м', '')
+          +boat-card('./img/index/boat-card-1.jpg', 'SNVP-551', 'СНВП-551', 'Катер на воздушной подушке', '4-5 чел.', '450 кг', '5 м', '', 'Заказать')
+            p.price 8000 
+              span р/час
         div.boat-item.col-xs-12.col-sm-6.col-md-3
-          +boat-card('./img/index/boat-card-2.jpg', 'SNVP-551', 'СНВП-551', 'Катер на воздушной подушке', '4-5 чел.', '450 кг', '5 м', '')
+          +boat-card('./img/index/boat-card-2.jpg', 'SNVP-551', 'СНВП-551', 'Катер на воздушной подушке', '4-5 чел.', '450 кг', '5 м', '', 'Заказать')
+            p.price 8000 
+              span р/час
         div.boat-item.col-xs-12.col-sm-6.col-md-3
-          +boat-card('./img/index/boat-card-3.jpg', 'SNVP-551', 'СНВП-551', 'Катер на воздушной подушке', '4-5 чел.', '450 кг', '5 м', '')
+          +boat-card('./img/index/boat-card-3.jpg', 'SNVP-551', 'СНВП-551', 'Катер на воздушной подушке', '4-5 чел.', '450 кг', '5 м', '', 'Заказать')
+            p.price 8000 
+              span р/час
         div.boat-item.col-xs-12.col-sm-6.col-md-3
-          +boat-card('./img/index/boat-card-4.jpg', 'SNVP-551', 'СНВП-551', 'Катер на воздушной подушке', '4-5 чел.', '450 кг', '5 м', '')
+          +boat-card('./img/index/boat-card-4.jpg', 'SNVP-551', 'СНВП-551', 'Катер на воздушной подушке', '4-5 чел.', '450 кг', '5 м', '', 'Заказать')
+            p.price 8000 
+              span р/час
 
   div.arenda-garanty
     div.container

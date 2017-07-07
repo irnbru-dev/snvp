@@ -1,4 +1,4 @@
-mixin headline(lastTab, title)
+mixin headline(lastTab, title, addClass)
   section.headline&attributes(attributes)
     div.container
       ol.breadcrumb
@@ -7,7 +7,7 @@ mixin headline(lastTab, title)
           span.glyphicon.glyphicon-chevron-right
         block
         li.breadcrumb-item.active= lastTab
-      h2.page-title= title
+      h2.page-title(class= addClass)= title
 
 
 //- If you need more Tabs - attach to parent elem lines like:

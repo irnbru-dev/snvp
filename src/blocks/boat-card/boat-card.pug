@@ -1,4 +1,4 @@
-mixin boat-card(src, alt, title, subtitle, people, weight, length, href)
+mixin boat-card(src, alt, title, subtitle, people, weight, length, href, btnText)
   section.boat-card
     a.boat-card__link-to-boat
       div.boat-card__img-box
@@ -12,5 +12,5 @@ mixin boat-card(src, alt, title, subtitle, people, weight, length, href)
         p.boat-card__weight= weight
         span.sprite-icon.icon-boatcard-lenght
         p.boat-card__length= length
-      a.boat-card__btn.btn.btn--bordered(href= href) Узнать цену
       block
+      a.boat-card__btn.btn.btn--bordered(href= href)= btnText

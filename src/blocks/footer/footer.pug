@@ -1,11 +1,12 @@
 mixin footer()
   footer.footer&attributes(attributes)
     div.container
-      div.footer__phone-box
-        p.footer__phone +7 812
-          span 927 36 66
-        p.footer__phone +7 495
-          span 233 72 24
+      block
+      //- div.footer__phone-box
+      //-   p.footer__phone +7 812
+      //-     span 927 36 66
+      //-   p.footer__phone +7 495
+      //-     span 233 72 24
       div.footer__footer-top
         a.footer__logo.pull-left(href='index.html')
           p.name snvp.su
@@ -69,4 +70,3 @@ mixin footer()
                 a(href='#') Презентация
           li.footer__item-title Блог
           li.footer__item-title Форум
-      block

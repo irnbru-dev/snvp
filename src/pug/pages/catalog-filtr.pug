@@ -1,0 +1,50 @@
+extends ../layout/_layoutBase.pug
+
+block content
+
+  +main-nav()
+
+  +headline('Аэроботы', 'Аэроботы', '')
+    li.breadcrumb-item
+      a(href='catalog-select.html') Каталог
+      span.glyphicon.glyphicon-chevron-right
+
+  +filtr()
+
+  +aerobots()
+    div.row
+      div.boat-item.col-xs-12.col-sm-6.col-md-3
+        +boat-card('./img/index/boat-card-1.jpg', 'SNVP-551', 'СНВП-551', 'Катер на воздушной подушке', '4-5 чел.', '450 кг', '5 м', '', 'Узнать цену')
+      div.boat-item.col-xs-12.col-sm-6.col-md-3
+        +boat-card('./img/index/boat-card-2.jpg', 'SNVP-551', 'СНВП-551', 'Катер на воздушной подушке', '4-5 чел.', '450 кг', '5 м', '', 'Узнать цену')
+      div.boat-item.col-xs-12.col-sm-6.col-md-3
+        +boat-card('./img/index/boat-card-3.jpg', 'SNVP-551', 'СНВП-551', 'Катер на воздушной подушке', '4-5 чел.', '450 кг', '5 м', '', 'Узнать цену')
+      div.boat-item.col-xs-12.col-sm-6.col-md-3
+        +boat-card('./img/index/boat-card-4.jpg', 'SNVP-551', 'СНВП-551', 'Катер на воздушной подушке','4-5 чел.','450 кг', '5 м', '', 'Узнать цену')
+    div.row
+      div.boat-item.col-xs-12.col-sm-6.col-md-3
+        +boat-card('./img/index/boat-card-1.jpg', 'SNVP-551', 'СНВП-551', 'Катер на воздушной подушке', '4-5 чел.', '450 кг', '5 м', '', 'Узнать цену')
+      div.boat-item.col-xs-12.col-sm-6.col-md-3
+        +boat-card('./img/index/boat-card-2.jpg', 'SNVP-551', 'СНВП-551', 'Катер на воздушной подушке', '4-5 чел.', '450 кг', '5 м', '', 'Узнать цену')
+      div.boat-item.col-xs-12.col-sm-6.col-md-3
+        +boat-card('./img/index/boat-card-3.jpg', 'SNVP-551', 'СНВП-551', 'Катер на воздушной подушке', '4-5 чел.', '450 кг', '5 м', '', 'Узнать цену')
+      div.boat-item.col-xs-12.col-sm-6.col-md-3
+        +boat-card('./img/index/boat-card-4.jpg', 'SNVP-551', 'СНВП-551', 'Катер на воздушной подушке','4-5 чел.','450 кг', '5 м', '', 'Узнать цену')
+
+    //- <--ЗДЕСЬ БУДЕТ ПАГИНАЦИЯ-->
+    nav.aria-label
+      ul.pagination
+        li.page-item
+          a.page-link(href="#")
+            span.sprite-icon.icon-arrow-l-nav
+        li.page-item
+          a.page-link(href="#") 1
+        li.page-item.active
+          span.page-link 2
+        li.page-item
+          a.page-link(href="#") 3
+        li.page-item
+          a.page-link(href="#") 
+            span.sprite-icon.icon-arrow-r-nav
+
+  +footer()
