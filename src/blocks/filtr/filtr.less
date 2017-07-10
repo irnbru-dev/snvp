@@ -4,12 +4,62 @@
   padding-top: 40px;
   padding-bottom: 30px;
   color: @white;
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: 500;
+
+  .filtr-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  form {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .form-item {
+    
+    box-sizing: border-box;
+    padding: 0 15px;
+  }
 
   input[type="checkbox"] {
     border: none;
-    border: 1px solid red;
     &:focus {
       border: none;
+    }
+  }
+
+  .slider {
+    width: 220px;
+    p {
+      text-align: center;
+      font-family: 'Open Sans', sans-serif;
+    }
+  }
+
+  .ui-slider {
+    background-color: #258cd5;
+    border: none;
+  }
+
+  .ui-widget-content {
+    color: @white;
+    height: 5px;
+  }
+
+  .ui-state-default {
+    background-color: @blue;
+    border: none;
+    border-radius: 50%;
+
+    width: 0.9em;
+    height: 0.9em;
+
+    &:focus {
+      outline: none;
     }
   }
 }

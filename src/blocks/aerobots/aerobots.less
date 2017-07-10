@@ -15,13 +15,21 @@
 
   .pagination > li > a {
     background-color: transparent;
+    border-radius: 0;
     border: none;
+    text-decoration: underline;
+    color: @blue;
   }
 
   .pagination>li>a:focus,
   .pagination>li>a:hover,
   .pagination>li>span:focus,
   .pagination>li>span:hover {
-    color: @blue;
+    // color: @blue;
+  }
+
+  .pagination>li>a:visited,
+  .pagination>li>span:visited {
+    color: #334d7d;
   }
 }

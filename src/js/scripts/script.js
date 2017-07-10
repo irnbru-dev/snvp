@@ -35,3 +35,9 @@ function equalHeights(elementsClass) {
         }
     }
 }
+
+// Для включения JQuery UI Slider (on Catalog-filtr page)
+$( function() {
+  $( "#slider" ).slider();
+} );
+
