@@ -15,34 +15,93 @@
   }
 
   form {
-    display: flex;
-    justify-content: space-between;
+    @media (max-width: 992px) {
+      margin: 0 auto;
+    }
+  }
+
+  .row {
+    // border: 1px solid red;
+    // width: 100%;
   }
 
   .form-item {
-    
     box-sizing: border-box;
     padding: 0 15px;
+    @media (max-width: 992px) {
+      margin-bottom: 50px;
+    }
   }
 
   input[type="checkbox"] {
     border: none;
+    vertical-align: top;
+    margin-right: 10px;
+
+    @media (max-width: 992px) {
+      display: block;
+      margin: 0 auto;
+      margin-top: 40px;
+      margin-bottom: 15px;
+    }
+
     &:focus {
       border: none;
     }
   }
 
+  input[type="radio"] {
+    margin-right: 10px;
+    vertical-align: top;
+
+    @media (max-width: 992px) {
+      display: block;
+      margin: 0 auto;
+      margin-top: 40px;
+      margin-bottom: 15px;
+    }
+  }
+
+  label {
+    font-weight: 500;
+
+    @media (max-width: 992px) {
+      display: block;
+      text-align: center;
+      
+    }
+  }
+
+  label > span {
+    display: block;
+  }
+
   .slider {
     width: 220px;
+    float: right;
+    
     p {
       text-align: center;
       font-family: 'Open Sans', sans-serif;
     }
+    @media (max-width: 992px) {
+      margin: 0 auto;
+      margin-bottom: 80px;
+      float: none;
+    }
+
+    .value {
+      margin-top: 10px;
+    }
   }
 
   .ui-slider {
-    background-color: #258cd5;
+    // background-color: #258cd5;
     border: none;
+  }
+
+  .ui-widget-header {
+    background: @blue;
   }
 
   .ui-widget-content {

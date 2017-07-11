@@ -2,6 +2,9 @@
   .community{
     display: block;
     border-bottom: 1px solid #f2f2f2;
+    @media (max-width: 992px) {
+      padding-bottom: 80px;
+    }
 
     &__title {
       text-align: center;
@@ -33,9 +36,10 @@
         color: @white;
       }
       @media (max-width: 991px) {
-        margin-top: 20px;
         position: relative;
         float: right;
+        margin-top: 20px;
+        margin-right: 15px;
       }
     }
 

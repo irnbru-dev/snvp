@@ -177,30 +177,37 @@
       </section>
       <section class="filtr">
         <div class="container">
-          <div class="filtr-box">
-            <form>
-              <div class="form-item">
-                <input type="checkbox" name="option" value="" id="commerc" />
-                <label for="commerc">Коммерческие перевозки</label>
-              </div>
-              <div class="form-item">
-                <input type="checkbox" name="option" value="" id="public" />
-                <label for="public">Государственные проекты</label>
-              </div>
-              <div class="form-item">
-                <input type="checkbox" name="option" value="" id="privat" />
-                <label for="privat">Частное использование</label>
-              </div>
-              <div class="form-item">
-                <input type="radio" id="secondhand" />
-                <label for="secondhand">Б/у</label>
+          <div class="row">
+            <form class="col-lg-9">
+              <div class="row">
+                <div class="form-item col-xs-6 col-lg-3">
+                  <input type="checkbox" name="option" value="" id="commerc" />
+                  <label for="commerc">Коммерческие
+                    <span>перевозки</span>
+                  </label>
+                </div>
+                <div class="form-item col-xs-6 col col-lg-3">
+                  <input type="checkbox" name="option" value="" id="public" />
+                  <label for="public">Государственные
+                    <span>проекты</span>
+                  </label>
+                </div>
+                <div class="form-item col-xs-6 col col-lg-3">
+                  <input type="checkbox" name="option" value="" id="privat" />
+                  <label for="privat">Частное
+                    <span>использование</span>
+                  </label>
+                </div>
+                <div class="form-item col-xs-6 col col-lg-3">
+                  <input type="radio" id="secondhand" />
+                  <label for="secondhand">Б/у</label>
+                </div>
               </div>
             </form>
-            <div class="slider">
+            <div class="slider col-lg-3">
               <p>Количество мест</p>
-              <div id="slider">
-                <p class="value">18</p>
-              </div>
+              <div id="slider"></div>
+              <p class="value">18</p>
             </div>
           </div>
         </div>
@@ -394,7 +401,12 @@
                 <a class="page-link" href="#">5</a>
               </li>
               <li class="page-item">
-                <a class="page-link" href="#">6</a>
+                <a class="page-link" href="#">
+                  <span>...</span>
+                </a>
+              </li>
+              <li class="page-item">
+                <a class="page-link" href="#">8</a>
               </li>
               <li class="page-item">
                 <a class="page-link" href="#">

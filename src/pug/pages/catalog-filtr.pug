@@ -31,7 +31,7 @@ block content
       div.boat-item.col-xs-12.col-sm-6.col-md-3
         +boat-card('./img/index/boat-card-4.jpg', 'SNVP-551', 'СНВП-551', 'Катер на воздушной подушке','4-5 чел.','450 кг', '5 м', '', 'Узнать цену')
 
-    //- pagination style in aerobots block
+    //- pagination style in aerobots less block
     nav.aria-label
       ul.pagination
         li.page-item
@@ -48,7 +48,10 @@ block content
         li.page-item
           a.page-link(href="#") 5
         li.page-item
-          a.page-link(href="#") 6
+          a.page-link(href='#')
+            span ...
+        li.page-item
+          a.page-link(href="#") 8
         li.page-item
           a.page-link(href="#") 
             span.sprite-icon.icon-arrow-r-nav

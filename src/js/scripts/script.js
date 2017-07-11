@@ -3,7 +3,7 @@ $(function () {
         equalHeights('.news-item');
         equalHeights('.community-item');
         equalHeights('.form-adv__item');
-
+        // equalHeights('.company__img-box');
     });
 });
 
@@ -38,6 +38,8 @@ function equalHeights(elementsClass) {
 
 // Для включения JQuery UI Slider (on Catalog-filtr page)
 $( function() {
-  $( "#slider" ).slider();
+  $( "#slider" ).slider({
+    range: "min"
+  });
 } );
 

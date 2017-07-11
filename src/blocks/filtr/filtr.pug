@@ -1,22 +1,26 @@
 mixin filtr()
   section.filtr&attributes(attributes)
     div.container
-      div.filtr-box
-        form
-          div.form-item
-            input(type='checkbox',name='option',value='',id='commerc')
-            label(for='commerc') Коммерческие перевозки
-          div.form-item
-            input(type='checkbox',name='option',value='',id='public')
-            label(for='public') Государственные проекты
-          div.form-item
-            input(type='checkbox',name='option',value='',id='privat')
-            label(for='privat') Частное использование
-          div.form-item
-            input(type='radio', id='secondhand')
-            label(for='secondhand') Б/у
+      div.row
+        form.col-lg-9
+          div.row
+            div.form-item.col-xs-6.col-lg-3
+              input(type='checkbox',name='option',value='',id='commerc')
+              label(for='commerc') Коммерческие 
+                span перевозки
+            div.form-item.col-xs-6.col.col-lg-3
+              input(type='checkbox',name='option',value='',id='public')
+              label(for='public') Государственные 
+                span проекты
+            div.form-item.col-xs-6.col.col-lg-3
+              input(type='checkbox',name='option',value='',id='privat')
+              label(for='privat') Частное 
+                span использование
+            div.form-item.col-xs-6.col.col-lg-3
+              input(type='radio', id='secondhand')
+              label(for='secondhand') Б/у
 
-        div.slider
+        div.slider.col-lg-3
           p Количество мест
           div(id='slider')
-            p.value 18
+          p.value 18
