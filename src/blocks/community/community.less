@@ -23,6 +23,11 @@
   .community-item {
     position: relative;
     margin-bottom: 80px;
+    @media (min-width: 768px) and (max-width: 991px) {
+      &:last-child {
+        margin-bottom: -140px;
+      }
+    }
 
     &__all {
       position: absolute;

@@ -21,6 +21,12 @@
   .news-item {
     position: relative;
 
+    @media (min-width: 768px) and (max-width: 991px) {
+      &:last-child {
+        margin-bottom: -100px;
+      }
+    }
+
     &__all {
       position: absolute;
       display: inline-block;
