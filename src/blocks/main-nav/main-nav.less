@@ -47,19 +47,20 @@
     background-color: @white;
     border: none;
     height: 50px;
-  }
-  
-  .logo {
-    text-transform: uppercase;
-    margin-top: 10px;
-    @media (min-width: 768px) {
-      margin-left: 15px;
+
+    .logo {
+      text-transform: uppercase;
+      margin-top: 10px;
+      @media (min-width: 768px) {
+        margin-left: 15px;
+      }
     }
 
     .name {
       font-size: 24px;
       font-weight: 700;
     }
+
     .txt {
       font-size: 6px;
       line-height: 14px;
@@ -67,6 +68,12 @@
       margin-top: -15px;
       margin-bottom: 0;
       padding-bottom: 0;
+    }
+  }
+  
+  .navbar-main {
+    .logo {
+      display: none;
     }
   }
 
@@ -242,11 +249,51 @@
       border-radius: 0;
       margin-bottom: 0;
       padding-top: 40px;
-      padding-bottom: 40px;
+      padding-bottom: 10px;
+    
+    .navbar-header {
+      display: none;
+    }
 
+    .navbar-main {
       .logo {
-        display: none;
+        text-align: center;
+        margin-top: -20px;
+        color: @black;
+        &:hover, &:active, &:visited {
+          color: @black;
+          text-decoration: none;
+        };
+
+        .name {
+          font-size: 30px;
+          line-height: 55px;
+          font-weight: 800;
+          text-transform: uppercase;
+          margin-top: -15px;
+        }
+
+        .txt {
+          font-size: 8px;
+          line-height: 18px;
+          font-weight: 700;
+          text-transform: uppercase;
+          margin-top: -25px;
+        }
       }
+    }
+
+    .navbar-collapse {
+      display: flex !important;
+      // justify-content: center;
+    }
+
+    .navbar-nav {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+    }
+  
 
     .nav-item {
       position: relative;
@@ -285,6 +332,7 @@
       padding: 45px 10px 20px 10px;
       width: 330px;
       background-color: #f9f9f9;
+      margin-left: -15px;
     }
 
     .dropdown-menu > li:first-child a{
