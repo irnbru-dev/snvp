@@ -2,12 +2,15 @@ extends ../layout/_layoutBase.pug
 
 block content
 
-  +main-nav()
+  div.page
 
-  +headline('О компании', 'О компании', '')
+    +main-nav()
 
-  +company-info()
+    +headline('О компании', 'О компании', '')
 
-  //- ТУТ БУДЕТ ГАЛЛЕРЕЯ
+    +company-info()
 
-  +footer()
+    //- ТУТ БУДЕТ ГАЛЛЕРЕЯ
+    +company-gallery()
+
+    +footer()

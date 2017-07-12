@@ -1,0 +1,41 @@
+.company-gallery {
+  // display: block;
+  padding-bottom: 80px;
+  
+  .img-box {
+    position: relative;
+    margin-bottom: 30px;
+
+  .over-shadow {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 15px;
+    margin-right: 15px;
+
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(39,55,87,0.6);
+    opacity:0;
+    transition: all 0.3s;
+    z-index: 1;
+    
+    &:hover {
+      opacity:1;
+    }
+
+    .icon-resize-arrows {
+      &:hover {
+        display: inline-block;
+      }
+    }
+  }
+
+    img {
+      width: 100%;
+    }
+  }
+}

@@ -7,8 +7,11 @@
     <meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1.0">
     <title>SNVP</title>
     <link rel="canonical" href="/">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/resources/demos/style.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800&amp;amp;subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.3/css/bootstrap-select.min.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
@@ -174,16 +177,39 @@
       </section>
       <section class="filtr">
         <div class="container">
-          <form>
-            <input type="checkbox" name="option" value="a1" id="commerc" />
-            <label for="commerc">Коммерческие перевозки</label>
-            <input type="checkbox" name="option" value="a2" id="public" />
-            <label for="public">Государственные проекты</label>
-            <input type="checkbox" name="option" value="a3" id="privat" />
-            <label for="privat">Частное использование</label>
-            <input type="radio" id="secondhand" />
-            <label for="secondhand">Б/у</label>
-          </form>
+          <div class="row">
+            <form class="col-lg-9">
+              <div class="row">
+                <div class="form-item col-xs-6 col-lg-3">
+                  <input type="checkbox" name="option" value="" id="commerc" />
+                  <label for="commerc">Коммерческие
+                    <span>перевозки</span>
+                  </label>
+                </div>
+                <div class="form-item col-xs-6 col col-lg-3">
+                  <input type="checkbox" name="option" value="" id="public" />
+                  <label for="public">Государственные
+                    <span>проекты</span>
+                  </label>
+                </div>
+                <div class="form-item col-xs-6 col col-lg-3">
+                  <input type="checkbox" name="option" value="" id="privat" />
+                  <label for="privat">Частное
+                    <span>использование</span>
+                  </label>
+                </div>
+                <div class="form-item col-xs-6 col col-lg-3">
+                  <input type="radio" id="secondhand" />
+                  <label for="secondhand">Б/у</label>
+                </div>
+              </div>
+            </form>
+            <div class="slider col-lg-3">
+              <p>Количество мест</p>
+              <div id="slider"></div>
+              <p class="value">18</p>
+            </div>
+          </div>
         </div>
       </section>
       <section class="aerobots">
@@ -369,6 +395,20 @@
                 <a class="page-link" href="#">3</a>
               </li>
               <li class="page-item">
+                <a class="page-link" href="#">4</a>
+              </li>
+              <li class="page-item">
+                <a class="page-link" href="#">5</a>
+              </li>
+              <li class="page-item">
+                <a class="page-link" href="#">
+                  <span>...</span>
+                </a>
+              </li>
+              <li class="page-item">
+                <a class="page-link" href="#">8</a>
+              </li>
+              <li class="page-item">
                 <a class="page-link" href="#">
                   <span class="sprite-icon icon-arrow-r-nav"></span>
                 </a>
@@ -480,7 +520,10 @@
       </footer>
     </main>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.3/js/bootstrap-select.min.js"></script>
     <script src="js/script.min.js"></script>
   </body>
 </html>
