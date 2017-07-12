@@ -9,12 +9,13 @@ mixin main-nav()
             span.icon-bar
       div.navbar-main
         div.container
-          a(href='index.html').pull-left.logo
-            span.sprite-icon.icon-logo
-            p.name snvp.su
-            p.txt Суда на воздушной подушке
           div.collapse.navbar-collapse(id='bs-example-navbar-collapse-1')
             ul.nav.navbar-nav
+              li.nav-item.logo
+                //- div.logo
+                span.sprite-icon.icon-logo
+                p.name snvp.su
+                p.txt Суда на воздушной подушке
               li.dropdown.nav-item
                 a.dropdown-toggle(href='catalog-select.html', data-toggle='dropdown', role='button', aria-haspopup='true', aria-expanded='false') Каталог
                   span.glyphicon.glyphicon-menu-down

@@ -258,12 +258,12 @@
     .navbar-main {
       .logo {
         text-align: center;
-        margin-top: -20px;
+        // margin-top: -20px;
         color: @black;
-        &:hover, &:active, &:visited {
-          color: @black;
-          text-decoration: none;
-        };
+        // &:hover, &:active, &:visited {
+        //   color: @black;
+        //   text-decoration: none;
+        // }
 
         .name {
           font-size: 30px;
@@ -285,6 +285,8 @@
 
     .navbar-collapse {
       display: flex !important;
+      padding-left: 0;
+      padding-right: 0;
       // justify-content: center;
     }
 
@@ -292,13 +294,14 @@
       width: 100%;
       display: flex;
       justify-content: space-between;
+      align-items: center;
     }
   
 
     .nav-item {
       position: relative;
       
-      &:hover:after {
+      &:not(:first-child):hover:after {
         position: absolute;
         display: inline-block;
         content: '';
