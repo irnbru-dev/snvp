@@ -86,7 +86,6 @@
     left: 0;
     right: 0;
     z-index: 1030;
-    // box-shadow: 0 0 10px rgba(0,0,0,0.3);
 
     .nav-item a {
       text-transform: uppercase;
@@ -258,12 +257,7 @@
     .navbar-main {
       .logo {
         text-align: center;
-        // margin-top: -20px;
         color: @black;
-        // &:hover, &:active, &:visited {
-        //   color: @black;
-        //   text-decoration: none;
-        // }
 
         .name {
           font-size: 30px;
@@ -301,7 +295,7 @@
     .nav-item {
       position: relative;
       
-      &:not(:first-child):hover:after {
+      &:not(:first-child):not(:last-child):hover:after {
         position: absolute;
         display: inline-block;
         content: '';
@@ -354,6 +348,11 @@
 
     .subnav-item a:hover {
       color: @green;
+    }
+
+    .glyphicon-search {
+      color: @black;
+      top: -1px;
     }
 
     .link {
