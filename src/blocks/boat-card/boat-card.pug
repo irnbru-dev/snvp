@@ -6,11 +6,14 @@ mixin boat-card(src, alt, title, subtitle, people, weight, length, href, btnText
       h3.boat-card__title= title
       p.boat-card__subtitle= subtitle
       div.boat-card__about
-        span.sprite-icon.icon-boatcard-people
-        p.boat-card__people= people
-        span.sprite-icon.icon-boatcard-width
-        p.boat-card__weight= weight
-        span.sprite-icon.icon-boatcard-lenght
-        p.boat-card__length= length
+        div.about-item
+          span.sprite-icon.icon-boatcard-people
+          p.boat-card__people= people
+        div.about-item
+          span.sprite-icon.icon-boatcard-width
+          p.boat-card__weight= weight
+        div.about-item
+          span.sprite-icon.icon-boatcard-lenght
+          p.boat-card__length= length
       block
       a.boat-card__btn.btn.btn--bordered(href= href)= btnText
