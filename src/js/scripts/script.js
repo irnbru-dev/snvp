@@ -3,7 +3,7 @@ $(function () {
         equalHeights('.news-item');
         equalHeights('.community-item');
         equalHeights('.form-adv__item');
-        // equalHeights('.company__img-box');
+        equalHeights('.company__img-box');
     });
 });
 

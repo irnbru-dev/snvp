@@ -2,25 +2,25 @@ mixin filtr()
   section.filtr&attributes(attributes)
     div.container
       div.row
-        form.col-lg-9
+        form.col-md-7.col-lg-9
           div.row
             div.form-item.col-xs-6.col-lg-3
-              input(type='checkbox',name='option',value='',id='commerc')
+              input(type='checkbox', name='boat',value='',id='commerc')
               label(for='commerc') Коммерческие 
                 span перевозки
             div.form-item.col-xs-6.col.col-lg-3
-              input(type='checkbox',name='option',value='',id='public')
+              input(type='checkbox', name='boat',value='',id='public')
               label(for='public') Государственные 
                 span проекты
             div.form-item.col-xs-6.col.col-lg-3
-              input(type='checkbox',name='option',value='',id='privat')
+              input(type='checkbox', name='boat',value='',id='privat')
               label(for='privat') Частное 
                 span использование
             div.form-item.col-xs-6.col.col-lg-3
               input(type='radio', id='secondhand')
               label(for='secondhand') Б/у
 
-        div.slider.col-lg-3
+        div.slider.col-md-5.col-lg-3
           p Количество мест
           div(id='slider')
           p.value 18

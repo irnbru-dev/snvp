@@ -2,95 +2,103 @@ mixin main-nav()
     nav.navbar
       div.navbar-header
         div.container
-          div.pull-left.logo
+          div.pull-left.logo 
             p.name snvp.su
             p.txt Суда на воздушной подушке
           button.navbar-toggle.collapsed(data-toggle='collapse', data-target='#bs-example-navbar-collapse-1', aria-expanded='false')
             span.icon-bar
-      div.container
-        div.collapse.navbar-collapse(id='bs-example-navbar-collapse-1')
-          ul.nav.navbar-nav
-            li.dropdown.nav-item
-              a.dropdown-toggle(href='catalog-select.html', data-toggle='dropdown', role='button', aria-haspopup='true', aria-expanded='false') Каталог
-                span.glyphicon.glyphicon-menu-down
-              ul.dropdown-menu
-                li.subnav-item
-                  a(href='') Судно на воздушной подушке
-                li.subnav-item
-                  a(href='#') Аэроглиссер
-                li.subnav-item
-                  a(href='#') Аэробот
-                li.subnav-item
-                  a(href='#') Аэроджип
-                li.subnav-item
-                  a(href='#') Аэролодка
-                li.subnav-item
-                  a(href='#') Вездеход на воздушной подушке
-                li.subnav-item
-                  a(href='#') Грузовая платформа на воздушной подушке
-            li.dropdown.nav-item
-              a.dropdown-toggle(href='#', data-toggle='dropdown', role='button', aria-haspopup='true', aria-expanded='false') Купить
-                span.glyphicon.glyphicon-menu-down
-              ul.dropdown-menu
-                li.subnav-item
-                  a(href='#') Action
-                li.subnav-item
-                  a(href='#') Action
-                li.subnav-item
-                  a(href='#') Action
-                li.subnav-item
-                  a(href='#') Action
-                li.subnav-item
-                  a(href='#') Action
-                li.subnav-item
-                  a(href='#') Action
-                li.subnav-item
-                  a(href='#') Action
-            li.nav-item
-              a(href='arenda.html') Аренда
-            li.dropdown.nav-item
-              a.dropdown-toggle(href='#', data-toggle='dropdown', role='button', aria-haspopup='true', aria-expanded='false') Ремонт
-                span.glyphicon.glyphicon-menu-down
-              ul.dropdown-menu
-                li.subnav-item
-                  a(href='#') Action
-                li.subnav-item
-                  a(href='#') Action
-                li.subnav-item
-                  a(href='#') Action
-                li.subnav-item
-                  a(href='#') Action
-                li.subnav-item
-                  a(href='#') Action
-                li.subnav-item
-                  a(href='#') Action
-                li.subnav-item
-                  a(href='#') Action
-            li.dropdown.nav-item
-              a.dropdown-toggle(href='about-company.html', data-toggle='dropdown', role='button', aria-haspopup='true', aria-expanded='false') О компании
-                span.glyphicon.glyphicon-menu-down
-              ul.dropdown-menu
-                li.subnav-item
-                  a(href='contact.html') Контакты
-                li.subnav-item
-                  a(href='#') Something
-                li.subnav-item
-                  a(href='#') Something
-                li.subnav-item
-                  a(href='#') Something
-                li.subnav-item
-                  a(href='#') Something
-                li.subnav-item
-                  a(href='#') Something
-                li.subnav-item
-                  a(href='#') Something
-            li.nav-item
-              a(href='#') Блог
-            li.nav-item
-              a(href='#') Форум
+      div.navbar-main
+        div.container
+          div.collapse.navbar-collapse(id='bs-example-navbar-collapse-1')
+            ul.nav.navbar-nav
+              li.nav-item.logo
+                //- div.logo
+                span.sprite-icon.icon-logo
+                p.name snvp.su
+                p.txt Суда на воздушной подушке
+              li.dropdown.nav-item
+                a.dropdown-toggle(href='catalog-select.html', data-toggle='dropdown', role='button', aria-haspopup='true', aria-expanded='false') Каталог
+                  span.glyphicon.glyphicon-menu-down
+                ul.dropdown-menu
+                  li.subnav-item
+                    a(href='') Судно на воздушной подушке
+                  li.subnav-item
+                    a(href='#') Аэроглиссер
+                  li.subnav-item
+                    a(href='#') Аэробот
+                  li.subnav-item
+                    a(href='#') Аэроджип
+                  li.subnav-item
+                    a(href='#') Аэролодка
+                  li.subnav-item
+                    a(href='#') Вездеход на воздушной подушке
+                  li.subnav-item
+                    a(href='#') Грузовая платформа на воздушной подушке
+              li.dropdown.nav-item
+                a.dropdown-toggle(href='#', data-toggle='dropdown', role='button', aria-haspopup='true', aria-expanded='false') Купить
+                  span.glyphicon.glyphicon-menu-down
+                ul.dropdown-menu
+                  li.subnav-item
+                    a(href='#') Action
+                  li.subnav-item
+                    a(href='#') Action
+                  li.subnav-item
+                    a(href='#') Action
+                  li.subnav-item
+                    a(href='#') Action
+                  li.subnav-item
+                    a(href='#') Action
+                  li.subnav-item
+                    a(href='#') Action
+                  li.subnav-item
+                    a(href='#') Action
+              li.nav-item
+                a(href='arenda.html') Аренда
+              li.dropdown.nav-item
+                a.dropdown-toggle(href='#', data-toggle='dropdown', role='button', aria-haspopup='true', aria-expanded='false') Ремонт
+                  span.glyphicon.glyphicon-menu-down
+                ul.dropdown-menu
+                  li.subnav-item
+                    a(href='#') Action
+                  li.subnav-item
+                    a(href='#') Action
+                  li.subnav-item
+                    a(href='#') Action
+                  li.subnav-item
+                    a(href='#') Action
+                  li.subnav-item
+                    a(href='#') Action
+                  li.subnav-item
+                    a(href='#') Action
+                  li.subnav-item
+                    a(href='#') Action
+              li.dropdown.nav-item
+                a.dropdown-toggle(href='about-company.html', data-toggle='dropdown', role='button', aria-haspopup='true', aria-expanded='false') О компании
+                  span.glyphicon.glyphicon-menu-down
+                ul.dropdown-menu
+                  li.subnav-item
+                    a(href='contact.html') Контакты
+                  li.subnav-item
+                    a(href='#') Something
+                  li.subnav-item
+                    a(href='#') Something
+                  li.subnav-item
+                    a(href='#') Something
+                  li.subnav-item
+                    a(href='#') Something
+                  li.subnav-item
+                    a(href='#') Something
+                  li.subnav-item
+                    a(href='#') Something
+              li.nav-item
+                a(href='#') Блог
+              li.nav-item
+                a(href='#') Форум
+              li.nav-item
+                span.glyphicon.glyphicon-search
 
-          a.link(href='#') Карта сайта
-          a.link.pull-right(href='#') Каталог наименований
+            a.link(href='#') Карта сайта
+            a.link.pull-right(href='#') Каталог наименований
 
-          input(type='text')
-      block
+            input(type='text')
+        block
