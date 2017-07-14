@@ -121,4 +121,130 @@
       outline: none;
     }
   }
+
+  // Checkbox style
+  .custom-checkbox > [type="checkbox"],
+  .custom-checkbox > label,
+  .custom-radio > [type="radio"],
+  .custom-radio > label {
+      margin-bottom: 0 !important;
+      user-select: none;
+  }
+
+  .custom-checkbox > [type="checkbox"]:not(:checked),
+  .custom-checkbox > [type="checkbox"]:checked,
+  .custom-radio > [type="radio"]:not(:checked),
+  .custom-radio > [type="radio"]:checked {
+    position: absolute;
+    left: -9999px;
+  }
+
+  .custom-checkbox > [type="checkbox"]:not(:checked) + label,
+  .custom-checkbox > [type="checkbox"]:checked + label,
+  .custom-radio > [type="radio"]:not(:checked) + label,
+  .custom-radio > [type="radio"]:checked + label {
+      position: relative;
+      padding-left: 22px;
+      cursor: pointer;
+      color: #fff;
+  }
+
+  .custom-checkbox > [type="checkbox"]:not(:checked) + label:before,
+  .custom-checkbox > [type="checkbox"]:checked + label:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 18px;
+    height: 18px;
+    border: none;
+    border-radius: 2px;
+  }
+
+
+  .custom-radio > [type="radio"]:not(:checked) + label:before,
+  .custom-radio > [type="radio"]:checked + label:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 18px;
+    height: 18px;
+    border: none;
+    border-radius: 50%;
+  }
+
+  .custom-checkbox > [type="checkbox"]:not(:checked) + label:before,
+  .custom-radio > [type="radio"]:not(:checked) + label:before {
+    background: #fff;
+  }
+
+  .custom-checkbox > [type="checkbox"]:checked + label:before,
+  .custom-radio > [type="radio"]:checked + label:before {
+    background: #258cd5;
+  }
+
+  .custom-checkbox > [type="checkbox"]:not(:checked) + label:after,
+  .custom-checkbox > [type="checkbox"]:checked + label:after {
+    font: normal normal normal 10px/1 'Glyphicons Halflings';
+    content: '\e013';
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    color: #fff;
+  }
+
+
+  .custom-radio > [type="radio"]:not(:checked) + label:after,
+  .custom-radio > [type="radio"]:checked + label:after {
+    font: normal normal normal 10px/1 'glyphicon-record';
+    content: '\e013';
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    color: #fff;
+  }
+
+  .custom-checkbox > [type="checkbox"]:not(:checked) + label:after,
+  .custom-radio > [type="radio"]:not(:checked) + label:after {
+    opacity: 0;
+    transform: scale(0);
+  }
+
+  .custom-checkbox > [type="checkbox"]:checked + label:after,
+  .custom-radio > [type="radio"]:checked + label:after {
+    opacity: 1;
+    transform: scale(1);
+  }
+
+  .custom-checkbox > [type="checkbox"][data-indeterminate] + label:after,
+  .custom-checkbox > [type="checkbox"][data-indeterminate] + label:after,
+  .custom-radio > [type="radio"][data-indeterminate] + label:after,
+  .custom-radio > [type="radio"][data-indeterminate] + label:after {
+    content: '\2212';
+    left: 2px;
+    opacity: 1;
+    transform: scale(1);
+  }
+
+  .custom-checkbox > [type="checkbox"]:disabled:not(:checked) + label:before,
+  .custom-checkbox > [type="checkbox"]:disabled:checked + label:before,
+  .custom-radio > [type="radio"]:disabled:not(:checked) + label:before,
+  .custom-radio > [type="radio"]:disabled:checked + label:before {
+    box-shadow: none;
+    background-color: #ccc;
+    cursor: not-allowed;
+    opacity: 1;
+    color: #888;
+  }
+
+   .custom-checkbox > [type="checkbox"]:disabled:checked + label:after,
+   .custom-radio > [type="radio"]:disabled:checked + label:after {
+    color: #888;
+    cursor: not-allowed;
+  }
+
+  .custom-checkbox > [type="checkbox"]:disabled + label,
+  .custom-radio > [type="radio"]:disabled + label {
+    color: #aaa;
+    cursor: not-allowed;
+  }
 }

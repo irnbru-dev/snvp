@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <style>
+        body {
+            background: #334d7d;
+        }
+
+        .custom-checkbox > [type="checkbox"],
+        .custom-checkbox > label {
+            margin-bottom: 0 !important;
+            user-select: none;
+        }
+
+        .custom-checkbox > [type="checkbox"]:not(:checked),
+        .custom-checkbox > [type="checkbox"]:checked {
+            position: absolute;
+            left: -9999px;
+        }
+
+        .custom-checkbox > [type="checkbox"]:not(:checked) + label,
+        .custom-checkbox > [type="checkbox"]:checked + label {
+            position: relative;
+            padding-left: 22px;
+            cursor: pointer;
+            color: #fff;
+        }
+
+        .custom-checkbox > [type="checkbox"]:not(:checked) + label:before,
+        .custom-checkbox > [type="checkbox"]:checked + label:before {
+            content: '';
+            position: absolute;
+            left: 0;
+            width: 18px;
+            height: 18px;
+            border: none;
+            border-radius: 2px;
+        }
+
+        .custom-checkbox > [type="checkbox"]:not(:checked) + label:before {
+            background: #fff;
+        }
+
+        .custom-checkbox > [type="checkbox"]:checked + label:before {
+            background: #258cd5;
+        }
+
+        .custom-checkbox > [type="checkbox"]:not(:checked) + label:after,
+        .custom-checkbox > [type="checkbox"]:checked + label:after {
+            font: normal normal normal 10px/1 'Glyphicons Halflings';
+            content: '\e013';
+            position: absolute;
+            top: 4px;
+            left: 4px;
+            color: #fff;
+        }
+
+        .custom-checkbox > [type="checkbox"]:not(:checked) + label:after {
+            opacity: 0;
+            transform: scale(0);
+        }
+
+        .custom-checkbox > [type="checkbox"]:checked + label:after {
+            opacity: 1;
+            transform: scale(1);
+        }
+
+        .custom-checkbox > [type="checkbox"][data-indeterminate] + label:after,
+        .custom-checkbox > [type="checkbox"][data-indeterminate] + label:after {
+            content: '\2212';
+            left: 2px;
+            opacity: 1;
+            transform: scale(1);
+        }
+
+        .custom-checkbox > [type="checkbox"]:disabled:not(:checked) + label:before,
+        .custom-checkbox > [type="checkbox"]:disabled:checked + label:before {
+            box-shadow: none;
+            background-color: #ccc;
+            cursor: not-allowed;
+            opacity: 1;
+            color: #888;
+        }
+
+        .custom-checkbox > [type="checkbox"]:disabled:checked + label:after {
+            color: #888;
+            cursor: not-allowed;
+        }
+
+        .custom-checkbox > [type="checkbox"]:disabled + label {
+            color: #aaa;
+            cursor: not-allowed;
+        }
+
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <div class="col-sm-12">
+            <div class="custom-checkbox">
+                <input type="checkbox" id="cb1">
+                <label for="cb1">Unchecked</label>
+            </div>
+            <div class="custom-checkbox">
+                <input type="checkbox" checked="" id="cb2">
+                <label for="cb2">Checked</label>
+            </div>
+            <div class="custom-checkbox">
+                <input type="checkbox" disabled="" checked="" id="cb3">
+                <label for="cb3">Disabled</label>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

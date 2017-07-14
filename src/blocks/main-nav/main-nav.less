@@ -12,6 +12,12 @@
   box-shadow: 0 0 10px rgba(0,0,0,0.2);
 }
 
+@media (min-width: 768px) and (max-width: 991px) {
+  .navbar-nav {
+    margin-top: 7.5px;
+  }
+}
+
 @media (max-width: 991px) {
 
   .dropdown-menu {
@@ -166,6 +172,92 @@
     display:block !important;
   }
 
+  // search input on mobile
+  #main-search {
+    display: none;
+  }
+
+  #mobile-search {
+    margin-bottom: 15px;
+    @media (max-width: 767px) {
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+  }
+
+  // #mobile-search .glyphicon-search {
+  //   font-size: 16px;
+  // }
+
+  .form-control {
+    box-shadow: none;
+    border-radius: 0;
+    padding: 25px;
+    border: none;
+    &:focus {
+      border: none;
+    }
+  }
+
+  // .input-group-btn:last-child>.btn {
+  //   border-radius: 0;
+  // }
+  
+  .input-group-btn:last-child>.btn,
+  .input-group-btn:last-child>.btn-group {
+    margin-left: 0;
+  }
+
+  .btn.active.focus,
+  .btn.active:focus,
+  .btn.focus,
+  .btn:active.focus,
+  .btn:active:focus,
+  .btn:focus {
+    border: none;
+    box-shadow: 0;
+  }
+
+  .input-group-btn {
+      background-color: @blue;
+      border-radius: 0;
+      box-shadow: none;
+      outline: none;
+    &:focus {
+      border: none;
+      box-shadow: none;
+    }
+
+    .btn {
+      width: 50px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: @blue;
+      &:focus {
+        border: none;
+        box-shadow: 0;
+      }
+    }
+
+    .glyphicon-search {
+      color: @white;
+      font-size: 16px;
+    }
+  }
+
+  // .input-group .btn {
+  //   width: 50px;
+  //   display: flex;
+  //   justify-content: center;
+  //   align-items: center;
+  //   background-color: @blue;
+  //   &:focus {
+  //     border: none;
+  //     box-shadow: 0;
+  //   }
+  // }
+
 //burger animation
   .navbar-toggle {
     position: relative;
@@ -247,8 +339,8 @@
       display: block;
       border-radius: 0;
       margin-bottom: 0;
-      padding-top: 20px;
-      padding-bottom: 10px;
+      // padding-top: 20px;
+      // padding-bottom: 10px;
     
     .navbar-header {
       display: none;
@@ -329,7 +421,7 @@
       padding: 45px 10px 20px 10px;
       width: 330px;
       background-color: #f9f9f9;
-      margin-left: -15px;
+      margin-left: 15px;
     }
 
     .dropdown-menu > li:first-child a{
@@ -350,50 +442,127 @@
       color: @green;
     }
 
-    .input-group {
-      position: relative;
-    }
+    // .input-group {
+    //   position: relative;
+    // }
 
-    .input-group .form-control {
-      float: right;
-      // position: absolute;
+    // .input-group .form-control {
+    //   float: right;
+    //   // position: absolute;
 
-      // right: 0;
+    //   // right: 0;
       
-      width: 0;
-      transition: width 0.4s ease;
-      // padding: 6px 0;
-      &:focus {
-        // border: @black;
-        width: 100%;
-        box-shadow: none;
-      }
-    }
+    //   width: 0;
+    //   transition: width 0.4s ease;
+    //   // padding: 6px 0;
+    //   &:focus {
+    //     // border: @black;
+    //     width: 100%;
+    //     box-shadow: none;
+    //   }
+    // }
 
-    .input-group .btn {
-      border: none;
-      z-index: 3;
+    // .input-group .btn {
+    //   border: none;
+    //   z-index: 3;
       
-      &:hover {
-        background-color: @white;
-      }
-    }
+    //   &:hover {
+    //     background-color: @white;
+    //   }
+    // }
 
-    .glyphicon-search {
-      color: @black;
-      top: -1px;
-    }
+    // .glyphicon-search {
+    //   color: @black;
+    //   top: -1px;
+    // }
 
     .link {
       display: none;
     }
   }
+
+
+  // SEARCH TEST2
+  input {
+    outline: none;
+    border: none;
+  }
+  input[type=search] {
+    -webkit-appearance: textfield;
+    -webkit-box-sizing: content-box;
+    font-family: inherit;
+    font-size: 100%;
+  }
+
+  input::-webkit-search-decoration,
+  input::-webkit-search-cancel-button {
+    display: none; 
+  }
+
+
+  input[type=search] {
+    background: url(https://static.tumblr.com/ftv85bp/MIXmud4tx/search-icon.png) no-repeat 9px center;
+    // border: solid 1px #ccc;
+    padding: 9px 10px 9px 32px;
+    width: 55px;
+    
+    // -webkit-border-radius: 10em;
+    // -moz-border-radius: 10em;
+    // border-radius: 10em;
+    
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    transition: all .5s;
+  }
+  input[type=search]:focus {
+    width: 130px;
+    background-color: #fff;
+    border: 1px solid @blue;
+    // border-color: green;
+    // border-radius: 30px;
+     -webkit-border-radius: 10em;
+    -moz-border-radius: 10em;
+    border-radius: 10em;
+    
+    -webkit-box-shadow: 0 0 5px rgba(109,207,246,.5);
+    -moz-box-shadow: 0 0 5px rgba(109,207,246,.5);
+    box-shadow: 0 0 5px rgba(109,207,246,.5);
+  }
+
+
+  input:-moz-placeholder {
+    color: #999;
+  }
+  input::-webkit-input-placeholder {
+    color: #999;
+  }
+
+  #main-search input[type=search] {
+    width: 15px;
+    padding-left: 10px;
+    color: transparent;
+    cursor: pointer;
+  }
+  #main-search input[type=search]:hover {
+    background-color: #fff;
+  }
+  #main-search input[type=search]:focus {
+    width: 130px;
+    padding-left: 32px;
+    color: #000;
+    background-color: #fff;
+    cursor: auto;
+  }
+  #main-search input:-moz-placeholder {
+    color: transparent;
+  }
+  #main-search input::-webkit-input-placeholder {
+    color: transparent;
+  }
+
+  #mobile-search {
+    @media (min-width: 768px) {
+      display: none;
+    }
+  }
 }
-
-
-
-// <div class="input-group">
-//       <input type="text" class="form-control" placeholder="Search for...">
-//       <span class="input-group-btn">
-//         <button class="btn btn-default" type="button">Go!</button>
-//       </span>

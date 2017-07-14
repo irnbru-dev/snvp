@@ -12,10 +12,10 @@ mixin main-nav()
           div.collapse.navbar-collapse(id='bs-example-navbar-collapse-1')
             ul.nav.navbar-nav
               li.nav-item.logo
-                //- div.logo
-                span.sprite-icon.icon-logo
-                p.name snvp.su
-                p.txt Суда на воздушной подушке
+                a(href='index.html')
+                  span.sprite-icon.icon-logo
+                  p.name snvp.su
+                  p.txt Суда на воздушной подушке
               li.dropdown.nav-item
                 a.dropdown-toggle(href='catalog-select.html', data-toggle='dropdown', role='button', aria-haspopup='true', aria-expanded='false') Каталог
                   span.glyphicon.glyphicon-menu-down
@@ -95,13 +95,15 @@ mixin main-nav()
               li.nav-item
                 a(href='#') Форум
               li.nav-item
-                //- span.glyphicon.glyphicon-search
-                div.input-group
-                  input(type='text', name='').form-control
-                  span.input-group-btn
-                    button(type='button').btn.btn-default
-                      span.glyphicon.glyphicon-search
-                  //- input(type='submit')
+                form(id="main-search")
+                  input(type="search")
+
+                form(id="mobile-search")
+                  div.input-group
+                    input(type='text', placeholder='Поиск').form-control
+                    span.input-group-btn
+                      button.btn(type='button')
+                        span.glyphicon.glyphicon-search
               
             a.link(href='#') Карта сайта
             a.link.pull-right(href='#') Каталог наименований
