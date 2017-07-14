@@ -95,10 +95,16 @@ mixin main-nav()
               li.nav-item
                 a(href='#') Форум
               li.nav-item
-                span.glyphicon.glyphicon-search
-
+                //- span.glyphicon.glyphicon-search
+                div.input-group
+                  input(type='text', name='').form-control
+                  span.input-group-btn
+                    button(type='button').btn.btn-default
+                      span.glyphicon.glyphicon-search
+                  //- input(type='submit')
+              
             a.link(href='#') Карта сайта
             a.link.pull-right(href='#') Каталог наименований
 
-            input(type='text')
+            //- input(type='text').search
         block

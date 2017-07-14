@@ -350,6 +350,35 @@
       color: @green;
     }
 
+    .input-group {
+      position: relative;
+    }
+
+    .input-group .form-control {
+      float: right;
+      // position: absolute;
+
+      // right: 0;
+      
+      width: 0;
+      transition: width 0.4s ease;
+      // padding: 6px 0;
+      &:focus {
+        // border: @black;
+        width: 100%;
+        box-shadow: none;
+      }
+    }
+
+    .input-group .btn {
+      border: none;
+      z-index: 3;
+      
+      &:hover {
+        background-color: @white;
+      }
+    }
+
     .glyphicon-search {
       color: @black;
       top: -1px;
@@ -358,9 +387,13 @@
     .link {
       display: none;
     }
-
-    & input {
-      display: none;
-    }
   }
-} 
+}
+
+
+
+// <div class="input-group">
+//       <input type="text" class="form-control" placeholder="Search for...">
+//       <span class="input-group-btn">
+//         <button class="btn btn-default" type="button">Go!</button>
+//       </span>
