@@ -4,7 +4,106 @@ $(function () {
         equalHeights('.community-item');
         equalHeights('.form-adv__item');
         equalHeights('.company__img-box');
+        equalHeights('.form__item');
     });
+
+    /**
+     * Mobile menu bullets
+     */
+    $('.dropdown-toggle').on('click', function () {
+        var $link = $(this),
+            $icon = $link.find('.glyphicon-menu-down');
+        $link.parent().on('shown.bs.dropdown', function () {
+            $icon.addClass('opened')
+        });
+        $link.parent().on('hidden.bs.dropdown', function () {
+            $icon.removeClass('opened')
+        });
+    });
+
+    /**
+     * Catalog filter slider
+     */
+    var handle = $('#slider-handle');
+    $('#slider').slider({
+        range: 'min',
+        min: 1,
+        max: 20,
+        create: function() {
+            handle.text($(this).slider('value'));
+        },
+        slide: function(event, ui) {
+            handle.text(ui.value);
+        }
+    });
+
+    /**
+     * Product gallery
+     */
+    var slider = $('#item-gallery');
+    if(slider.length){
+        slider.royalSlider({
+            fullscreen: {
+                enabled: false
+            },
+            controlNavigation: 'thumbnails',
+            thumbs: {
+                spacing: 10,
+                orientation: 'horizontal',
+                appendSpan: false,
+                firstMargin: false,
+                fitInViewport: true
+            },
+            transitionType:'move',
+            loop: true,
+            usePreloader: true,
+            arrowsNav: false,
+            keyboardNavEnabled: true,
+            numImagesToPreload: 1,
+            video: {
+                autoHideBlocks: true,
+                autoHideArrows: false
+            }
+        });
+
+        $('.rsOverflow').append('<div class="opacity"></div>');
+        $('.rsNavItem').append('<div class="border"></div>');
+    }
+
+    /**
+     * Yandex map init
+     */
+    if ($('#contact-map').length > 0) {
+        ymaps.ready(function () {
+            var myMap = new ymaps.Map('contact-map', {
+                    center: [59.887137, 30.329136],
+                    zoom: 16,
+                    controls: ['zoomControl', 'fullscreenControl']
+                }, {
+                    searchControlProvider: 'yandex#search'
+                }),
+                myPlacemark = new ymaps.Placemark([59.887137, 30.329136], {
+                }, {
+                    iconLayout: 'default#image',
+                    iconImageHref: './img/point-map.png',
+                    iconImageSize: [33, 40]
+                });
+            myMap.geoObjects.add(myPlacemark);
+            myMap.behaviors.disable('scrollZoom');
+        });
+    }
+    if ($('#arenda-map').length > 0) {
+        ymaps.ready(function () {
+            var myMap = new ymaps.Map('arenda-map', {
+                    center: [60, 29],
+                    zoom: 9,
+                    controls: ['zoomControl', 'fullscreenControl']
+                }, {
+                    searchControlProvider: 'yandex#search'
+                });
+            myMap.behaviors.disable('scrollZoom');
+        });
+    }
 });
 
 /**
@@ -35,44 +134,3 @@ function equalHeights(elementsClass) {
         }
     }
 }
-
-// Для включения JQuery UI Slider (on Catalog-filtr page)
-$( function() {
-  $( "#slider" ).slider({
-    range: "min"
-  });
-} );
-
-
-//MAP on contact page
-
-// ymaps.ready(function () {
-//     var myMap = new ymaps.Map('contact-map', {
-//             center: [55.751574, 37.573856],
-//             zoom: 9
-//         }, {
-//             searchControlProvider: 'yandex#search'
-//         }),
-
-//         myPlacemark = new ymaps.Placemark(myMap.getCenter(), 
-//         // {
-//             // hintContent: 'Собственный значок метки',
-//             // balloonContent: 'Это красивая метка'
-//         // }, 
-//         {
-//             // Опции.
-//             // Необходимо указать данный тип макета.
-//             // iconLayout: 'default#image',
-//             // Своё изображение иконки метки.
-//             iconImageHref: './img/',
-//             // Размеры метки.
-//             iconImageSize: [30, 42],
-//             // Смещение левого верхнего угла иконки относительно
-//             // её "ножки" (точки привязки).
-//             iconImageOffset: [-5, -38]
-//         }),
-
-//     myMap.geoObjects
-//         .add(myPlacemark);
-// });
-

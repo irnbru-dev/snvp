@@ -1,6 +1,17 @@
 .btn {
   display: block;
   border-radius: 0;
+  outline: none !important;
+
+  &.active.focus,
+  &.active:focus,
+  &.focus,
+  &:active.focus,
+  &:active:focus,
+  &:focus,
+  &:active {
+    box-shadow: none;
+  }
 
   &--blue {
     background-color: @blue;
