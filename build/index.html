@@ -8,6 +8,7 @@
     <title>SNVP</title>
     <link rel="canonical" href="/">
     <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.0.47/jquery.fancybox.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800&amp;amp;subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.3/css/bootstrap-select.min.css">
@@ -160,17 +161,22 @@
                   <a href="#">Форум</a>
                 </li>
                 <li class="nav-item">
-                  <form id="main-search">
-                    <input type="search" />
+                  <form class="input-group" id="main-search">
+                    <input class="form-control" type="text" />
+                    <span class="input-group-btn">
+                      <button class="btn" type="button"></button>
+                    </span>
                   </form>
                   <form id="mobile-search">
-                    <div class="input-group">
-                      <input class="form-control" type="text" placeholder="Поиск" />
-                      <span class="input-group-btn">
-                        <button class="btn" type="button">
-                          <span class="glyphicon glyphicon-search"></span>
-                        </button>
-                      </span>
+                    <div class="input-inner">
+                      <div class="input-group">
+                        <input class="form-control" type="text" placeholder="Поиск" />
+                        <span class="input-group-btn">
+                          <button class="btn" type="button">
+                            <span class="glyphicon glyphicon-search"></span>
+                          </button>
+                        </span>
+                      </div>
                     </div>
                   </form>
                 </li>
@@ -797,6 +803,7 @@
     </main>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.0.47/jquery.fancybox.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.3/js/bootstrap-select.min.js"></script>
     <script src="https://api-maps.yandex.ru/2.0-stable/?load=package.standard&amp;lang=ru-RU" type="text/javascript"></script>

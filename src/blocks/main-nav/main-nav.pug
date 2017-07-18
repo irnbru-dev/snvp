@@ -95,15 +95,22 @@ mixin main-nav()
               li.nav-item
                 a(href='#') Форум
               li.nav-item
-                form(id="main-search")
-                  input(type="search")
+                //- form(id="main-search")
+                //-   input(type="search")
+                //-   input(type="button" value='smth')
+
+                form(id="main-search").input-group
+                  input(type="text").form-control
+                  span.input-group-btn
+                    button.btn(type="button")
 
                 form(id="mobile-search")
-                  div.input-group
-                    input(type='text', placeholder='Поиск').form-control
-                    span.input-group-btn
-                      button.btn(type='button')
-                        span.glyphicon.glyphicon-search
+                  div.input-inner
+                    div.input-group
+                      input(type='text', placeholder='Поиск').form-control
+                      span.input-group-btn
+                        button.btn(type='button')
+                          span.glyphicon.glyphicon-search
               
             a.link(href='#') Карта сайта
             a.link.pull-right(href='#') Каталог наименований
