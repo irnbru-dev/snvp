@@ -5,11 +5,11 @@ mixin main-nav()
           div.pull-left.logo 
             p.name snvp.su
             p.txt Суда на воздушной подушке
-          button.navbar-toggle.collapsed(data-toggle='collapse', data-target='#bs-example-navbar-collapse-1', aria-expanded='false')
+          button.navbar-toggle.collapsed(data-toggle='collapse', data-target='#bs-navbar-collapse', aria-expanded='false')
             span.icon-bar
       div.navbar-main
         div.container
-          div.collapse.navbar-collapse(id='bs-example-navbar-collapse-1')
+          div.collapse.navbar-collapse(id='bs-navbar-collapse')
             ul.nav.navbar-nav
               li.nav-item.logo
                 a(href='index.html')
@@ -105,12 +105,12 @@ mixin main-nav()
                     button.btn(type="button")
 
                 form(id="mobile-search")
-                  div.input-inner
-                    div.input-group
-                      input(type='text', placeholder='Поиск').form-control
-                      span.input-group-btn
-                        button.btn(type='button')
-                          span.glyphicon.glyphicon-search
+
+                  div.input-group
+                    input(type='text', placeholder='Поиск').form-control
+                    span.input-group-btn
+                      button.btn.btn-search(type='button')
+                        span.glyphicon.glyphicon-search
               
             a.link(href='#') Карта сайта
             a.link.pull-right(href='#') Каталог наименований

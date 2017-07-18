@@ -1,0 +1,452 @@
+.royalSlider {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  direction: ltr;
+}
+
+.royalSlider > * {
+  float: left;
+}
+
+.rsWebkit3d .rsSlide {
+  -webkit-transform: translateZ(0);
+}
+
+.rsWebkit3d .rsSlide,
+.rsWebkit3d .rsContainer,
+.rsWebkit3d .rsThumbs,
+.rsWebkit3d .rsPreloader,
+.rsWebkit3d img,
+.rsWebkit3d .rsOverflow,
+.rsWebkit3d .rsBtnCenterer,
+.rsWebkit3d .rsAbsoluteEl,
+.rsWebkit3d .rsABlock,
+.rsWebkit3d .rsLink {
+  -webkit-backface-visibility: hidden;
+}
+
+.rsFade.rsWebkit3d .rsSlide,
+.rsFade.rsWebkit3d img,
+.rsFade.rsWebkit3d .rsContainer {
+  -webkit-transform: none;
+}
+
+.rsOverflow {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  float: left;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.rsVisibleNearbyWrap {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  left: 0;
+  top: 0;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.rsVisibleNearbyWrap .rsOverflow {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.rsContainer {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.rsArrow,
+.rsThumbsArrow {
+  cursor: pointer;
+}
+
+.rsThumb {
+  float: left;
+  position: relative;
+}
+
+.rsArrow,
+.rsNav,
+.rsThumbsArrow {
+  opacity: 1;
+  transition: opacity 0.3s linear;
+}
+
+.rsHidden {
+  opacity: 0;
+  visibility: hidden;
+  transition: visibility 0s linear 0.3s, opacity 0.3s linear;
+}
+
+.rsGCaption {
+  width: 100%;
+  float: left;
+  text-align: center;
+}
+
+.royalSlider.rsFullscreen {
+  position: fixed !important;
+  height: auto !important;
+  width: auto !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  z-index: 2147483647 !important;
+  top: 0 !important;
+  left: 0 !important;
+  bottom: 0 !important;
+  right: 0 !important;
+}
+
+.royalSlider .rsSlide.rsFakePreloader {
+  opacity: 1 !important;
+  transition: 0s;
+  display: none;
+}
+
+.rsSlide {
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: block;
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+}
+
+.royalSlider.rsAutoHeight,
+.rsAutoHeight .rsSlide {
+  height: auto;
+}
+
+.rsContent {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  padding-top: 44px;
+  cursor: pointer;
+}
+
+.rsPreloader {
+  position: absolute;
+  z-index: 0;
+}
+
+.rsNav {
+  -moz-user-select: -moz-none;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+.rsThumbs {
+  cursor: pointer;
+  width: 100%;
+  z-index: 22;
+  bottom: 0;
+  overflow: hidden;
+}
+
+.rsTabs {
+  float: left;
+  background: none !important;
+}
+
+.rsTabs,
+.rsThumbs {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.rsVideoFrameHolder {
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: #141414;
+  opacity: 0;
+  -webkit-transition: .3s;
+}
+
+.rsVideoFrameHolder.rsVideoActive {
+  opacity: 1;
+}
+
+.rsVideoContainer iframe,
+.rsVideoContainer video,
+.rsVideoContainer embed,
+.rsVideoContainer .rsVideoObj {
+  position: absolute;
+  z-index: 50;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.rsABlock {
+  left: 0;
+  top: 0;
+  position: absolute;
+  z-index: 15;
+}
+
+.grab-cursor {
+  cursor: url('../img/rs/grab.png') 8 8, move;
+}
+
+.grabbing-cursor {
+  cursor: url('../img/rs/grabbing.png') 8 8, move;
+}
+
+.rsNoDrag {
+  cursor: auto;
+}
+
+.rsLink {
+  left: 0;
+  top: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: block;
+  z-index: 20;
+  background: url('../img/rs/blank.gif');
+}
+
+.rsOverflow .rsSlide img {
+  cursor: pointer;
+}
+
+.rsUni,
+.rsUni .rsOverflow,
+.rsUni .rsSlide,
+.rsUni .rsVideoFrameHolder,
+.rsUni .rsThumbs {
+  background: none;
+}
+
+.royalSlider {
+  background: #FFFFFF;
+  height: 100%;
+}
+
+.rsUni .rsThumb.rsNavSelected .rsTmb {
+  padding: 0 !important;
+  cursor: default;
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
+
+.rsUni.rsWithThumbsHor .rsThumbsArrowRight {
+  right: 0;
+}
+
+.rsUni.rsWithThumbsHor .rsThumbsArrowLeft {
+  left: 0;
+}
+
+.rsUni .rsThumbsArrow {
+  cursor: pointer;
+  display: block;
+  position: absolute;
+  height: 20px;
+  width: 18px;
+  z-index: 21;
+  bottom: -35px;
+
+  @media (min-width: 480px) {
+    bottom: 18px;
+  }
+
+  @media (min-width: 768px) {
+    bottom: 37px;
+  }
+
+  @media (min-width: 992px) {
+    bottom: 30px;
+  }
+
+  @media (min-width: 1200px) {
+    bottom: 37px;
+  }
+}
+
+.rsUni .rsThumbsArrowIcn {
+  background: transparent url("../img/png-sprite.png") no-repeat -296px -201px;
+  cursor: pointer;
+  height: 14px;
+  width: 18px;
+  margin-top: 3px;
+}
+
+.rsUni.rsWithThumbsHor .rsThumbsArrowLeft .rsThumbsArrowIcn {
+  transform: rotate(180deg);
+}
+
+.rsUni .rsThumbsArrowDisabled {
+  opacity: 0.25;
+  cursor: default;
+
+  .rsThumbsArrowIcn {
+    cursor: default;
+  }
+}
+
+.product-item-gallery {
+  width: 290px;
+  height: 254px;
+  user-select: none;
+  margin: 35px auto 50px;
+
+  @media (min-width: 480px) {
+    width: 448px;
+    height: 346px;
+    margin-bottom: 35px;
+  }
+
+  @media (min-width: 768px) {
+    width: 100%;
+    height: 576px;
+  }
+
+  @media (min-width: 992px) {
+    height: 383px;
+  }
+
+  @media (min-width: 1200px) {
+    height: 470px;
+  }
+}
+
+img.rsImg {
+  max-width: none;
+  width: 100% !important;
+  margin-left: 0 !important;
+  margin-top: 0 !important;
+  height: 181px !important;
+
+  @media (min-width: 480px) {
+    height: 280px !important;
+  }
+
+  @media (min-width: 768px) {
+    height: 466px !important;
+  }
+
+  @media (min-width: 992px) {
+    height: 294px !important;
+  }
+
+  @media (min-width: 1200px) {
+    height: 360px !important;
+  }
+}
+
+.rsThumbs {
+  width: 100%;
+
+  @media (min-width: 480px) {
+    width: 390px;
+    margin-left: 29px;
+  }
+
+  @media (min-width: 768px) {
+    width: 670px;
+    margin-left: 25px;
+  }
+
+  @media (min-width: 992px) {
+    width: 401px;
+    margin-left: 27px;
+  }
+
+  @media (min-width: 1200px) {
+    width: 500px;
+    margin-left: 27px;
+  }
+}
+
+.rsUni .rsThumb {
+  background-color: #FFF;
+  position: relative;
+  height: 56px;
+  width: 90px;
+
+  .rsTmb {
+    height: 100%;
+    width: 100%;
+  }
+
+  .border {
+    height: 56px;
+    width: 90px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    border: 3px solid transparent;
+  }
+
+  &:hover .border {
+    border-color: @green;
+  }
+
+  &.rsNavSelected .border {
+    height: 56px;
+    width: 90px;
+    cursor: default;
+    border: 3px solid #2491dd;
+  }
+
+  @media (min-width: 768px) {
+    height: 100px;
+    width: 160px;
+
+    .border {
+      width: 160px;
+      height: 100px;
+    }
+
+    &.rsNavSelected .border {
+      width: 160px;
+      height: 100px;
+    }
+  }
+
+  @media (min-width: 992px) {
+    height: 79px;
+    width: 127px;
+
+    .border {
+      height: 79px;
+      width: 127px;
+    }
+
+    &.rsNavSelected .border {
+      height: 79px;
+      width: 127px;
+    }
+  }
+
+  @media (min-width: 1200px) {
+    height: 100px;
+    width: 160px;
+
+    .border {
+      width: 160px;
+      height: 100px;
+    }
+
+    &.rsNavSelected .border {
+      width: 160px;
+      height: 100px;
+    }
+  }
+}
+
+
