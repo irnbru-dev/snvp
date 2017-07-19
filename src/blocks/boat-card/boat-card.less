@@ -1,93 +1,91 @@
-// @media (min-width: 768px) {
-  
-  .boat-card {
+.boat-card {
+  display: block;
+  max-width: 300px;
+  background-color: @white;
+  padding-bottom: 25px;
+  margin-bottom: 30px;
+
+  margin-left: auto;
+  margin-right: auto;
+
+  &__link-to-boat {
     display: block;
-    max-width: 300px;
-    background-color: @white;
-    padding-bottom: 25px;
-    margin-bottom: 30px;
+    cursor: pointer;
 
-    margin-left: auto;
-    margin-right: auto;
-
-    &__link-to-boat {
-      display: block;
-      cursor: pointer;
-
-      &:hover {
-        text-decoration: none;
-      }
-    }
-
-    &__img-box {
-      height: 250px;
-      overflow: hidden;
-
-      img {
-        width: 100%;
-      }
-    }
-
-    &__title {
-      font-weight: bold;
-      font-size: 20px;
-      line-height: 26px;
-      color: @black;
-      text-transform: uppercase;
-      padding-left: 30px;
-      padding-right: 30px;
-    }
-
-    &__subtitle {
-      color: @black;
-      font-size: 16px;
-      line-height: 26px;
-      padding-left: 30px;
-      padding-right: 30px;
-    }
-
-    &__about {
-      display: flex;
-      justify-content: space-between;
-      padding-left: 30px;
-      padding-right: 30px;
-      margin-bottom: 20px;
-    }
-
-    &__people, &__weight, &__length {
-      margin-left: 5px;
-      display: inline-block;
-      font-size: 11px;
-      color: #b5b5b5;
-    }
-
-    .icon-boatcard-people,
-    .icon-boatcard-width,
-    .icon-boatcard-lenght {
-      top: 3px;
-    }
-
-    .price {
-      padding-left: 30px;
-      padding-right: 30px;
-      margin-bottom: 15px;
-      font-size: 30px;
-      font-weight: 800;
-      color: @black;
-      margin-top: -15px;
-      &:hover {
-        color: @black;
-      }
-
-      span {
-        font-size: 20px;
-      }
-    }
-
-    &__btn {
-      margin-left: auto;
-      margin-right: auto;
-      max-width: 220px;
+    &:hover {
+      text-decoration: none;
     }
   }
+
+  &__img-box {
+    height: 250px;
+    overflow: hidden;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  &__title {
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 26px;
+    color: @black;
+    text-transform: uppercase;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  &__subtitle {
+    color: @black;
+    font-size: 16px;
+    line-height: 26px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  &__about {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-bottom: 20px;
+  }
+
+  &__people, &__weight, &__length {
+    margin-left: 5px;
+    display: inline-block;
+    font-size: 11px;
+    color: #b5b5b5;
+  }
+
+  .icon-boatcard-people,
+  .icon-boatcard-width,
+  .icon-boatcard-lenght {
+    top: 3px;
+  }
+
+  .price {
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-bottom: 15px;
+    font-size: 30px;
+    font-weight: 800;
+    color: @black;
+    margin-top: -15px;
+    &:hover {
+      color: @black;
+    }
+
+    span {
+      font-size: 20px;
+    }
+  }
+
+  &__btn {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 220px;
+  }
+}
 
