@@ -20,10 +20,10 @@
         <nav class="navbar">
           <div class="navbar-header">
             <div class="container">
-              <div class="pull-left logo">
+              <a class="pull-left logo" href="index.html">
                 <p class="name">snvp.su</p>
                 <p class="txt">Суда на воздушной подушке</p>
-              </div>
+              </a>
               <button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-navbar-collapse" aria-expanded="false">
                 <span class="icon-bar"></span>
               </button>
@@ -162,24 +162,13 @@
                     <a href="#">Форум</a>
                   </li>
                   <li class="nav-item">
-                    <form class="input-group" id="main-search">
-                      <input class="form-control" type="text" />
-                      <span class="input-group-btn">
-                        <button class="btn" type="button"></button>
-                      </span>
+                    <form id="main-search">
+                      <input id="main-search-input" type="search" />
+                      <button class="btn btn-search" id="main-search-submit" type="submit">
+                        <span class="glyphicon glyphicon-search"></span>
+                      </button>
                     </form>
                     <form id="mobile-search">
-<<<<<<< HEAD
-                      <div class="input-inner">
-                        <div class="input-group">
-                          <input class="form-control" type="text" placeholder="Поиск" />
-                          <span class="input-group-btn">
-                            <button class="btn" type="button">
-                              <span class="glyphicon glyphicon-search"></span>
-                            </button>
-                          </span>
-                        </div>
-=======
                       <div class="input-group">
                         <input class="form-control" type="text" placeholder="Поиск" />
                         <span class="input-group-btn">
@@ -187,7 +176,6 @@
                             <span class="glyphicon glyphicon-search"></span>
                           </button>
                         </span>
->>>>>>> 75f5c80e6aa0e1f9be4bbd0eee74fce034d5ed5d
                       </div>
                     </form>
                   </li>
@@ -263,7 +251,7 @@
                 <a data-fancybox="gallery" href="./img/company-gallery-4.jpeg">
                   <img src="./img/company-gallery-4.jpeg" alt="" />
                   <div class="over-shadow">
-                    <span class="sprite-icon icon-resize-arrows"></span>
+                    <span class="sprite-icon icon-resize-sarrows"></span>
                   </div>
                 </a>
               </div>

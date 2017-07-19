@@ -2,7 +2,7 @@ mixin main-nav()
     nav.navbar
       div.navbar-header
         div.container
-          div.pull-left.logo 
+          a.pull-left.logo(href='index.html')
             p.name snvp.su
             p.txt Суда на воздушной подушке
           button.navbar-toggle.collapsed(data-toggle='collapse', data-target='#bs-navbar-collapse', aria-expanded='false')
@@ -95,21 +95,15 @@ mixin main-nav()
               li.nav-item
                 a(href='#') Форум
               li.nav-item
-                //- form(id="main-search")
-                //-   input(type="search")
-                //-   input(type="button" value='smth')
-
-                form(id="main-search").input-group
-                  input(type="text").form-control
-                  span.input-group-btn
-                    button.btn(type="button")
-
+                form(id="main-search")
+                  input#main-search-input(type="search")
+                  button.btn.btn-search#main-search-submit(type="submit")
+                    span.glyphicon.glyphicon-search
                 form(id="mobile-search")
-
                   div.input-group
-                    input(type='text', placeholder='Поиск').form-control
+                    input(type='text', placeholder="Поиск").form-control
                     span.input-group-btn
-                      button.btn.btn-search(type='button')
+                      button.btn.btn-search(type="button")
                         span.glyphicon.glyphicon-search
               
             a.link(href='#') Карта сайта

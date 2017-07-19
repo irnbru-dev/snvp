@@ -19,10 +19,10 @@
       <nav class="navbar">
         <div class="navbar-header">
           <div class="container">
-            <div class="pull-left logo">
+            <a class="pull-left logo" href="index.html">
               <p class="name">snvp.su</p>
               <p class="txt">Суда на воздушной подушке</p>
-            </div>
+            </a>
             <button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-navbar-collapse" aria-expanded="false">
               <span class="icon-bar"></span>
             </button>
@@ -161,24 +161,13 @@
                   <a href="#">Форум</a>
                 </li>
                 <li class="nav-item">
-                  <form class="input-group" id="main-search">
-                    <input class="form-control" type="text" />
-                    <span class="input-group-btn">
-                      <button class="btn" type="button"></button>
-                    </span>
+                  <form id="main-search">
+                    <input id="main-search-input" type="search" />
+                    <button class="btn btn-search" id="main-search-submit" type="submit">
+                      <span class="glyphicon glyphicon-search"></span>
+                    </button>
                   </form>
                   <form id="mobile-search">
-<<<<<<< HEAD
-                    <div class="input-inner">
-                      <div class="input-group">
-                        <input class="form-control" type="text" placeholder="Поиск" />
-                        <span class="input-group-btn">
-                          <button class="btn" type="button">
-                            <span class="glyphicon glyphicon-search"></span>
-                          </button>
-                        </span>
-                      </div>
-=======
                     <div class="input-group">
                       <input class="form-control" type="text" placeholder="Поиск" />
                       <span class="input-group-btn">
@@ -186,7 +175,6 @@
                           <span class="glyphicon glyphicon-search"></span>
                         </button>
                       </span>
->>>>>>> 75f5c80e6aa0e1f9be4bbd0eee74fce034d5ed5d
                     </div>
                   </form>
                 </li>
@@ -259,41 +247,43 @@
       <section class="clients">
         <div class="container">
           <h2>Нам доверяют</h2>
-          <div class="item col-xs-6 col-sm-4 col-md-2">
-            <div class="img-box">
-              <img src="./img/index/logo-mchs.jpg" alt="MCHS" />
+          <div class="owl-carousel" id="owl-clients">
+            <div class="item">
+              <div class="img-box">
+                <img src="./img/index/logo-mchs.jpg" alt="MCHS" />
+              </div>
+              <p>МЧС России</p>
             </div>
-            <p>МЧС России</p>
-          </div>
-          <div class="item col-xs-6 col-sm-4 col-md-2">
-            <div class="img-box">
-              <img src="./img/index/rosgeo-logo.jpg" alt="" />
+            <div class="item">
+              <div class="img-box">
+                <img src="./img/index/rosgeo-logo.jpg" alt="" />
+              </div>
+              <p>Росгеология</p>
             </div>
-            <p>Росгеология</p>
-          </div>
-          <div class="item col-xs-6 col-sm-4 col-md-2">
-            <div class="img-box">
-              <img src="./img/index/rzd-logo.jpg" alt="" />
+            <div class="item">
+              <div class="img-box">
+                <img src="./img/index/rzd-logo.jpg" alt="" />
+              </div>
+              <p>РЖД</p>
             </div>
-            <p>РЖД</p>
-          </div>
-          <div class="item col-xs-6 col-sm-4 col-md-2">
-            <div class="img-box">
-              <img src="./img/index/rosinziniring-logo.jpg" alt="" />
+            <div class="item">
+              <div class="img-box">
+                <img src="./img/index/rosinziniring-logo.jpg" alt="" />
+              </div>
+              <p>Росинжиниринг</p>
             </div>
-            <p>Росинжиниринг</p>
-          </div>
-          <div class="item col-xs-6 col-sm-4 col-md-2">
-            <div class="img-box">
-              <img src="./img/index/samara-logo.jpg" alt="" />
+            <div class="item">
+              <div class="img-box">
+                <img src="./img/index/samara-logo.jpg" alt="" />
+              </div>
+              <p>Самарский Речной порт</p>
             </div>
-            <p>Самарский Речной порт</p>
-          </div>
-          <div class="item col-xs-6 col-sm-4 col-md-2">
-            <div class="img-box">
-              <img src="./img/index/logo-mchs.jpg" alt="" />
+            <div class="item">
+              <div class="img-box">
+                <img src="./img/index/logo-mchs.jpg" alt="" />
+              </div>
+              <p>МЧС Сахалина</p>
             </div>
-            <p>МЧС Сахалина</p>
           </div>
         </div>
       </section>
@@ -302,8 +292,8 @@
           <h2 class="popular-models__title">Популярные модели</h2>
         </div>
         <div class="container">
-          <div class="row">
-            <div class="boat-item col-xs-12 col-sm-6 col-md-4 col-lg-3">
+          <div class="owl-carousel" id="owl-popular">
+            <div class="boat-item">
               <section class="boat-card">
                 <a class="boat-card__link-to-boat">
                   <div class="boat-card__img-box">
@@ -329,7 +319,7 @@
                 </a>
               </section>
             </div>
-            <div class="boat-item col-xs-12 col-sm-6 col-md-4 col-lg-3">
+            <div class="boat-item">
               <section class="boat-card">
                 <a class="boat-card__link-to-boat">
                   <div class="boat-card__img-box">
@@ -355,7 +345,7 @@
                 </a>
               </section>
             </div>
-            <div class="boat-item col-xs-12 col-sm-6 col-md-4 col-lg-3">
+            <div class="boat-item">
               <section class="boat-card">
                 <a class="boat-card__link-to-boat">
                   <div class="boat-card__img-box">
@@ -381,7 +371,7 @@
                 </a>
               </section>
             </div>
-            <div class="boat-item col-xs-12 col-sm-6 col-md-4 col-lg-3">
+            <div class="boat-item">
               <section class="boat-card">
                 <a class="boat-card__link-to-boat">
                   <div class="boat-card__img-box">

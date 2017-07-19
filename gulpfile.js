@@ -19,12 +19,12 @@ var path = {
     src: {
         css:        'src/css/',
         cssDev:     'src/css/styles.css',
-        js:         'src/js/*.js',
+        js:         'src/js/**/*.js',
         lessMain:   'src/less/style.less',
         html:       'src/pug/pages/**/*.pug'
     },
     watch: {
-        js:         'src/js/*.js',
+        js:         'src/js/**/*.js',
         less:       ['src/less/**/*.less', 'src/blocks/**/*.less'],
         pug:       ['src/pug/**/*.pug', 'src/blocks/**/*.pug']
     }
