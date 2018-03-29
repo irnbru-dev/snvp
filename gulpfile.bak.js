@@ -26,7 +26,7 @@ var path = {
     watch: {
         js:         'src/js/**/*.js',
         less:       ['src/less/**/*.less', 'src/blocks/**/*.less'],
-        pug:       ['src/pug/**/*.pug', 'src/blocks/**/*.pug']
+        pug:        ['src/pug/**/*.pug', 'src/blocks/**/*.pug']
     }
 };
 
